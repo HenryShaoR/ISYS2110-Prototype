@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>NeighbourLink — Rate Your Ride</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="dashboard.html" class="topbar-back">← Skip</a>
+    <span style="font-weight:600;font-size:.92rem;">Rate Ride</span>
+    <div style="width:50px;"></div>
+  </header>
+
+  <div class="page">
+    <div class="card" style="text-align:center;padding:1.5rem;">
+      <h1 style="font-size:1.2rem;margin-bottom:.2rem;">How was your ride?</h1>
+      <p class="text-sm text-secondary mb-2">Rate your experience with <strong>Maria Santos</strong></p>
+
+      <!-- Ride summary -->
+      <div class="card" style="background:var(--color-bg);text-align:left;margin-bottom:1.25rem;border:none;">
+        <div class="ride-route" style="margin-bottom:.35rem;">
+          <span class="dot"></span>
+          <strong>Burwood</strong>
+          <span class="line"></span>
+          <span class="dot dot-end"></span>
+          <strong>CBD</strong>
+        </div>
+        <div class="text-sm text-secondary">22 April 2026, 7:30 AM</div>
+      </div>
+
+      <!-- Driver to rate -->
+      <div class="avatar avatar-lg" style="margin:0 auto .5rem;">MS</div>
+      <div style="font-weight:600;">Maria Santos</div>
+      <div class="text-sm text-secondary mb-2">Driver</div>
+
+      <!-- Star selector -->
+      <p class="text-sm fw-500 mb-05">Your rating</p>
+      <div class="star-select" style="margin-bottom:.25rem;">
+        <span class="filled">&#9733;</span>
+        <span class="filled">&#9733;</span>
+        <span class="filled">&#9733;</span>
+        <span class="filled">&#9733;</span>
+        <span class="filled">&#9733;</span>
+      </div>
+      <p class="text-sm text-secondary mb-2">5 out of 5 — Excellent</p>
+
+      <!-- Comment -->
+      <div class="form-group" style="text-align:left;">
+        <label for="review">Leave a comment (optional)</label>
+        <textarea id="review" class="form-control" placeholder="e.g. Great driver, very punctual and friendly!"></textarea>
+      </div>
+
+      <a href="dashboard.html" class="btn btn-primary btn-block">Submit rating</a>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <a href="dashboard.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1h-2z"/></svg>
+      Home
+    </a>
+    <a href="driving.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4"/></svg>
+      Driving
+    </a>
+    <a href="riding.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      Riding
+    </a>
+    <a href="profile.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4-4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      Profile
+    </a>
+  </nav>
+</body>
+</html>

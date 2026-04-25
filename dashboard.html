@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>NeighbourLink — Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="topbar-brand">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2C8 2 4 6 4 10c0 5.25 7 11 8 12 1-1 8-6.75 8-12 0-4-4-8-8-8z"/>
+        <circle cx="12" cy="10" r="3"/>
+      </svg>
+      NeighbourLink
+    </div>
+    <div class="topbar-right">
+      <a href="admin.html" class="text-sm text-secondary">Admin</a>
+    </div>
+  </header>
+
+  <div class="page">
+    <!-- Greeting -->
+    <div class="page-header">
+      <h1>Good evening, Emma</h1>
+      <p>Here's your ride sharing overview</p>
+    </div>
+
+    <!-- Stats -->
+    <div class="stat-row">
+      <div class="card stat-card">
+        <div class="stat-value">12</div>
+        <div class="stat-label">Rides</div>
+      </div>
+      <div class="card stat-card">
+        <div class="stat-value">2</div>
+        <div class="stat-label">Upcoming</div>
+      </div>
+      <div class="card stat-card">
+        <div class="stat-value">4.8</div>
+        <div class="stat-label">Rating</div>
+      </div>
+    </div>
+
+    <!-- Upcoming Rides -->
+    <div class="section-title">
+      <span>Upcoming Rides</span>
+    </div>
+
+    <a href="driving-detail.html" class="list-item">
+      <div class="list-item-body">
+        <div class="flex-between mb-05">
+          <span class="badge badge-offer">Driving</span>
+          <span class="text-sm text-secondary">Tomorrow, 7:30 AM</span>
+        </div>
+        <div class="ride-route">
+          <span class="dot"></span>
+          <strong>Burwood</strong>
+          <span class="line"></span>
+          <span class="dot dot-end"></span>
+          <strong>CBD</strong>
+        </div>
+        <div class="ride-meta mt-05">
+          <span>1 rider confirmed</span>
+          <span>1 seat left</span>
+        </div>
+      </div>
+      <span class="list-item-right">›</span>
+    </a>
+
+    <a href="riding-detail.html" class="list-item">
+      <div class="list-item-body">
+        <div class="flex-between mb-05">
+          <span class="badge badge-confirmed">Riding</span>
+          <span class="text-sm text-secondary">Mon 28 Apr, 8:00 AM</span>
+        </div>
+        <div class="ride-route">
+          <span class="dot"></span>
+          <strong>Strathfield</strong>
+          <span class="line"></span>
+          <span class="dot dot-end"></span>
+          <strong>Parramatta</strong>
+        </div>
+        <div class="ride-meta mt-05">
+          <span>Driver: James Lee</span>
+          <span>&#9733; 5.0</span>
+        </div>
+      </div>
+      <span class="list-item-right">›</span>
+    </a>
+
+    <!-- Notifications -->
+    <div class="section-title">
+      <span>Notifications</span>
+    </div>
+
+    <div class="card">
+      <div class="notification-item">
+        <div class="notification-icon warning">&#9993;</div>
+        <div class="notification-body">
+          <p><strong>Daniel Park</strong> requested your <strong>Burwood → CBD</strong> ride</p>
+          <div class="time">2 hours ago</div>
+          <a href="driving-detail.html" class="btn btn-primary btn-sm mt-05">Review</a>
+        </div>
+      </div>
+
+      <div class="notification-item">
+        <div class="notification-icon success">&#10003;</div>
+        <div class="notification-body">
+          <p>Your ride to <strong>Parramatta</strong> was accepted by <strong>James Lee</strong></p>
+          <div class="time">Yesterday</div>
+        </div>
+      </div>
+
+      <div class="notification-item">
+        <div class="notification-icon info">&#9733;</div>
+        <div class="notification-body">
+          <p><strong>Sarah Chen</strong> left you a 5-star rating</p>
+          <div class="time">2 days ago</div>
+        </div>
+      </div>
+
+      <div class="notification-item">
+        <div class="notification-icon success">&#10003;</div>
+        <div class="notification-body">
+          <p>Ride with <strong>Maria Santos</strong> completed. <a href="rate.html">Rate this ride</a></p>
+          <div class="time">3 days ago</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <a href="dashboard.html" class="active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1h-2z"/></svg>
+      Home
+    </a>
+    <a href="driving.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4"/></svg>
+      Driving
+    </a>
+    <a href="riding.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      Riding
+    </a>
+    <a href="profile.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4-4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      Profile
+    </a>
+  </nav>
+</body>
+</html>

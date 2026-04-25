@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>NeighbourLink — Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-brand">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2C8 2 4 6 4 10c0 5.25 7 11 8 12 1-1 8-6.75 8-12 0-4-4-8-8-8z"/>
+        <circle cx="12" cy="10" r="3"/>
+      </svg>
+      NeighbourLink
+    </div>
+    <a href="index.html" class="text-sm" style="color:var(--color-danger);">Sign out</a>
+  </header>
+
+  <div class="page">
+    <!-- Profile card -->
+    <div class="card" style="text-align:center;">
+      <div class="avatar avatar-lg" style="margin:0 auto .5rem;">EW</div>
+      <h2 style="font-size:1.2rem;">Emma Wilson</h2>
+      <p class="text-sm text-secondary">Member since Jan 2026 · Burwood, NSW</p>
+
+      <div style="margin:.75rem 0;">
+        <span class="stars" style="font-size:1rem;">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="empty"></span></span>
+        <span class="rating-value" style="font-size:.95rem;">4.8</span>
+      </div>
+
+      <div class="profile-stats" style="justify-content:center;">
+        <div class="p-stat">
+          <strong>12</strong>
+          Rides
+        </div>
+        <div class="p-stat">
+          <strong>8</strong>
+          As driver
+        </div>
+        <div class="p-stat">
+          <strong>4</strong>
+          As rider
+        </div>
+      </div>
+    </div>
+
+    <!-- Trust & verification -->
+    <div class="card">
+      <div class="card-header">
+        <h3>Trust &amp; verification</h3>
+      </div>
+      <div class="flex-col" style="gap:.55rem;font-size:.86rem;">
+        <div class="flex-between">
+          <span class="text-secondary">Email</span>
+          <span style="color:var(--color-success);">Verified ✓</span>
+        </div>
+        <div class="flex-between">
+          <span class="text-secondary">Phone</span>
+          <span style="color:var(--color-success);">Verified ✓</span>
+        </div>
+        <div class="flex-between">
+          <span class="text-secondary">Identity</span>
+          <span class="text-secondary">Not verified</span>
+        </div>
+        <div class="flex-between">
+          <span class="text-secondary">Response rate</span>
+          <span>95%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs: History / Reviews -->
+    <div class="tabs mt-2">
+      <a class="tab active" href="#">Ride History</a>
+      <a class="tab" href="#">Reviews (9)</a>
+    </div>
+
+    <!-- Ride history -->
+    <div class="card">
+      <div class="flex-col" style="gap:0;">
+        <div style="padding:.6rem 0;border-bottom:1px solid var(--color-border);">
+          <div class="flex-between text-sm">
+            <span>24 Apr · Burwood → CBD</span>
+            <span class="badge badge-offer" style="font-size:.68rem;">Driver</span>
+          </div>
+          <div class="flex-between mt-05">
+            <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="badge badge-confirmed" style="font-size:.68rem;">Completed</span>
+          </div>
+        </div>
+        <div style="padding:.6rem 0;border-bottom:1px solid var(--color-border);">
+          <div class="flex-between text-sm">
+            <span>22 Apr · CBD → Burwood</span>
+            <span class="badge badge-offer" style="font-size:.68rem;">Driver</span>
+          </div>
+          <div class="flex-between mt-05">
+            <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="badge badge-confirmed" style="font-size:.68rem;">Completed</span>
+          </div>
+        </div>
+        <div style="padding:.6rem 0;border-bottom:1px solid var(--color-border);">
+          <div class="flex-between text-sm">
+            <span>20 Apr · Burwood → CBD</span>
+            <span class="badge badge-offer" style="font-size:.68rem;">Driver</span>
+          </div>
+          <div class="flex-between mt-05">
+            <a href="rate.html" class="btn btn-outline btn-sm" style="padding:.3rem .6rem;font-size:.75rem;">Rate ride</a>
+            <span class="badge badge-confirmed" style="font-size:.68rem;">Completed</span>
+          </div>
+        </div>
+        <div style="padding:.6rem 0;border-bottom:1px solid var(--color-border);">
+          <div class="flex-between text-sm">
+            <span>18 Apr · Strathfield → Parramatta</span>
+            <span class="badge badge-request" style="font-size:.68rem;">Rider</span>
+          </div>
+          <div class="flex-between mt-05">
+            <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="badge badge-confirmed" style="font-size:.68rem;">Completed</span>
+          </div>
+        </div>
+        <div style="padding:.6rem 0;">
+          <div class="flex-between text-sm">
+            <span>12 Apr · Homebush → Olympic Park</span>
+            <span class="badge badge-request" style="font-size:.68rem;">Rider</span>
+          </div>
+          <div class="flex-between mt-05">
+            <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="badge badge-confirmed" style="font-size:.68rem;">Completed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reviews -->
+    <div class="card">
+      <div class="card-header">
+        <h3>Reviews</h3>
+        <span class="text-sm text-secondary">9 reviews</span>
+      </div>
+
+      <div class="review-item">
+        <div class="review-header">
+          <span class="avatar avatar-sm">SC</span>
+          <strong style="font-size:.84rem;">Sarah Chen</strong>
+          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
+        <p class="review-text">Wonderful driver — always on time and so friendly!</p>
+        <div class="text-sm text-secondary mt-05">2 days ago</div>
+      </div>
+
+      <div class="review-item">
+        <div class="review-header">
+          <span class="avatar avatar-sm">DP</span>
+          <strong style="font-size:.84rem;">Daniel Park</strong>
+          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
+        <p class="review-text">Great ride, very smooth. Appreciated the wait!</p>
+        <div class="text-sm text-secondary mt-05">1 week ago</div>
+      </div>
+
+      <div class="review-item">
+        <div class="review-header">
+          <span class="avatar avatar-sm">JL</span>
+          <strong style="font-size:.84rem;">James Lee</strong>
+          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;<span class="empty">&#9733;</span></span>
+        </div>
+        <p class="review-text">Good ride overall. Pick-up was easy to find.</p>
+        <div class="text-sm text-secondary mt-05">2 weeks ago</div>
+      </div>
+
+      <div class="review-item">
+        <div class="review-header">
+          <span class="avatar avatar-sm">LT</span>
+          <strong style="font-size:.84rem;">Lisa Tran</strong>
+          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
+        <p class="review-text">Five stars! Made me feel very safe.</p>
+        <div class="text-sm text-secondary mt-05">3 weeks ago</div>
+      </div>
+    </div>
+
+    <!-- Edit profile button -->
+    <button class="btn btn-outline btn-block mt-2">Edit profile</button>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <a href="dashboard.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1h-2z"/></svg>
+      Home
+    </a>
+    <a href="driving.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4"/></svg>
+      Driving
+    </a>
+    <a href="riding.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      Riding
+    </a>
+    <a href="profile.html" class="active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4-4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      Profile
+    </a>
+  </nav>
+</body>
+</html>

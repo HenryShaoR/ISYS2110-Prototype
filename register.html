@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>NeighbourLink — Register</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="no-bottom-nav">
+  <div class="auth-page">
+    <div class="auth-card card">
+      <div class="auth-brand">
+        <div class="brand-name">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2C8 2 4 6 4 10c0 5.25 7 11 8 12 1-1 8-6.75 8-12 0-4-4-8-8-8z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          NeighbourLink
+        </div>
+        <p class="brand-tagline">Community ride sharing, built on trust</p>
+      </div>
+
+      <h1>Create your account</h1>
+      <p class="subtitle">Join the local ride sharing community</p>
+
+      <form action="dashboard.html">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" class="form-control" placeholder="Emma">
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" class="form-control" placeholder="Wilson">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" class="form-control" placeholder="you@example.com">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" class="form-control" placeholder="0412 345 678">
+        </div>
+        <div class="form-group">
+          <label for="suburb">Suburb</label>
+          <input type="text" id="suburb" class="form-control" placeholder="e.g. Burwood">
+          <p class="form-hint">Used to suggest nearby rides within the council area</p>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" class="form-control" placeholder="At least 8 characters">
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm password</label>
+          <input type="password" id="confirm-password" class="form-control" placeholder="Re-enter password">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Create account</button>
+      </form>
+
+      <p class="auth-footer">
+        Already have an account? <a href="index.html">Sign in</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

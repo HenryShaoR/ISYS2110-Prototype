@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>NeighbourLink — Driving</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-brand">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2C8 2 4 6 4 10c0 5.25 7 11 8 12 1-1 8-6.75 8-12 0-4-4-8-8-8z"/>
+        <circle cx="12" cy="10" r="3"/>
+      </svg>
+      NeighbourLink
+    </div>
+  </header>
+
+  <div class="page">
+    <div class="page-header">
+      <h1>My Drive Offers</h1>
+      <p>Rides you're offering to the community</p>
+    </div>
+
+    <!-- Active offers -->
+    <div class="section-title">
+      <span>Active Offers</span>
+      <span class="badge badge-offer">3 offers</span>
+    </div>
+
+    <a href="driving-detail.html" class="list-item">
+      <div class="list-item-body">
+        <div class="flex-between mb-05">
+          <div class="ride-route" style="font-size:.88rem;">
+            <span class="dot"></span>
+            <strong>Burwood</strong>
+            <span class="line"></span>
+            <span class="dot dot-end"></span>
+            <strong>CBD</strong>
+          </div>
+        </div>
+        <div class="ride-meta">
+          <span>Weekdays, 7:30 AM</span>
+          <span>2 seats</span>
+        </div>
+        <div class="flex gap-05 mt-05" style="gap:.35rem;">
+          <span class="badge badge-confirmed">1 confirmed</span>
+          <span class="badge badge-request">1 pending</span>
+        </div>
+      </div>
+      <span class="list-item-right">›</span>
+    </a>
+
+    <a href="driving-detail.html" class="list-item">
+      <div class="list-item-body">
+        <div class="flex-between mb-05">
+          <div class="ride-route" style="font-size:.88rem;">
+            <span class="dot"></span>
+            <strong>CBD</strong>
+            <span class="line"></span>
+            <span class="dot dot-end"></span>
+            <strong>Burwood</strong>
+          </div>
+        </div>
+        <div class="ride-meta">
+          <span>Weekdays, 5:30 PM</span>
+          <span>2 seats</span>
+        </div>
+        <div class="flex gap-05 mt-05" style="gap:.35rem;">
+          <span class="badge badge-confirmed">1 confirmed</span>
+        </div>
+      </div>
+      <span class="list-item-right">›</span>
+    </a>
+
+    <a href="driving-detail.html" class="list-item">
+      <div class="list-item-body">
+        <div class="flex-between mb-05">
+          <div class="ride-route" style="font-size:.88rem;">
+            <span class="dot"></span>
+            <strong>Burwood</strong>
+            <span class="line"></span>
+            <span class="dot dot-end"></span>
+            <strong>Olympic Park</strong>
+          </div>
+        </div>
+        <div class="ride-meta">
+          <span>Sat 3 May, 9:00 AM</span>
+          <span>4 seats</span>
+        </div>
+        <div class="flex gap-05 mt-05" style="gap:.35rem;">
+          <span class="badge badge-pending">No requests yet</span>
+        </div>
+      </div>
+      <span class="list-item-right">›</span>
+    </a>
+
+    <!-- Past drives -->
+    <div class="section-title">
+      <span>Past Drives</span>
+    </div>
+
+    <div class="list-item" style="opacity:.65;">
+      <div class="list-item-body">
+        <div class="ride-route" style="font-size:.88rem;">
+          <span class="dot"></span>
+          <strong>Burwood</strong>
+          <span class="line"></span>
+          <span class="dot dot-end"></span>
+          <strong>CBD</strong>
+        </div>
+        <div class="ride-meta mt-05">
+          <span>22 Apr 2026</span>
+          <span>1 rider</span>
+          <span>&#9733; 5.0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-item" style="opacity:.65;">
+      <div class="list-item-body">
+        <div class="ride-route" style="font-size:.88rem;">
+          <span class="dot"></span>
+          <strong>CBD</strong>
+          <span class="line"></span>
+          <span class="dot dot-end"></span>
+          <strong>Burwood</strong>
+        </div>
+        <div class="ride-meta mt-05">
+          <span>20 Apr 2026</span>
+          <span>1 rider</span>
+          <span>&#9733; 4.0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAB: new offer -->
+  <a href="driving-new.html" class="fab" title="Post new drive offer">+</a>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <a href="dashboard.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1h-2z"/></svg>
+      Home
+    </a>
+    <a href="driving.html" class="active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4"/></svg>
+      Driving
+    </a>
+    <a href="riding.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      Riding
+    </a>
+    <a href="profile.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4-4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      Profile
+    </a>
+  </nav>
+</body>
+</html>

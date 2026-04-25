@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>NeighbourLink — New Drive Offer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="driving.html" class="topbar-back">← Cancel</a>
+    <span style="font-weight:600;font-size:.92rem;">New Drive Offer</span>
+    <div style="width:60px;"></div>
+  </header>
+
+  <div class="page">
+    <div class="card">
+      <form action="driving.html">
+        <p class="text-sm text-secondary fw-500 mb-1">Route</p>
+
+        <div class="form-group">
+          <label for="pickup">Pick-up location</label>
+          <input type="text" id="pickup" class="form-control" placeholder="e.g. Burwood Station">
+          <p class="form-hint">Must be within the local council area</p>
+        </div>
+
+        <div class="form-group">
+          <label for="destination">Destination</label>
+          <input type="text" id="destination" class="form-control" placeholder="e.g. Town Hall, CBD">
+          <p class="form-hint">Must be within the local council area</p>
+        </div>
+
+        <hr class="divider">
+        <p class="text-sm text-secondary fw-500 mb-1">Schedule</p>
+
+        <div class="form-group">
+          <label for="trip-type">Trip type</label>
+          <select id="trip-type" class="form-control">
+            <option>Recurring (weekly)</option>
+            <option>One-off trip</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="time">Departure time</label>
+            <input type="time" id="time" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="seats">Available seats</label>
+          <select id="seats" class="form-control">
+            <option>1</option>
+            <option selected>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+        </div>
+
+        <hr class="divider">
+        <p class="text-sm text-secondary fw-500 mb-1">Cost</p>
+
+        <div class="form-group">
+          <label for="contribution">Suggested cost contribution (AUD)</label>
+          <input type="number" id="contribution" class="form-control" placeholder="0" min="0" step="1">
+          <p class="form-hint">System will calculate an estimate based on distance</p>
+        </div>
+
+        <div class="form-group">
+          <label for="notes">Additional notes (optional)</label>
+          <textarea id="notes" class="form-control" placeholder="e.g. Pick-up point details, car description..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Post drive offer</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <a href="dashboard.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1h-2z"/></svg>
+      Home
+    </a>
+    <a href="driving.html" class="active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4"/></svg>
+      Driving
+    </a>
+    <a href="riding.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      Riding
+    </a>
+    <a href="profile.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4-4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      Profile
+    </a>
+  </nav>
+</body>
+</html>
