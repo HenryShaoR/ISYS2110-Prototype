@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>NeighbourLink — Ride Request Detail</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="dashboard.html" class="topbar-brand">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2C8 2 4 6 4 10c0 5.25 7 11 8 12 1-1 8-6.75 8-12 0-4-4-8-8-8z"/>
+        <circle cx="12" cy="10" r="3"/>
+      </svg>
+      NeighbourLink
+    </a>
+  </header>
+
+  <div class="page">
+    <div class="card">
+      <div class="route-visual">
+        <div class="route-point">
+          <div class="label">Pick-up</div>
+          <div class="location">Burwood</div>
+        </div>
+        <div class="route-line-long"></div>
+        <div class="route-point">
+          <div class="label">Destination</div>
+          <div class="location">Town Hall</div>
+        </div>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <div class="info-label">Schedule</div>
+          <div class="info-value">Weekdays, 7:45 AM</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Trip type</div>
+          <div class="info-value">Recurring</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Passengers</div>
+          <div class="info-value">1</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Status</div>
+          <div class="info-value">Awaiting offers</div>
+        </div>
+      </div>
+      <p class="text-sm text-secondary mt-1">Looking for a regular ride to Town Hall for work. Happy to contribute to fuel costs.</p>
+    </div>
+
+    <!-- Requester info -->
+    <div class="section-title">
+      <span>Requester</span>
+    </div>
+
+    <div class="card">
+      <div class="ride-user" style="gap:.75rem;">
+        <a href="profile-other.html" class="avatar">LT</a>
+        <div style="flex:1;">
+          <a href="profile-other.html" class="fw-500" style="font-size:.9rem;">Lisa Tran</a>
+          <div class="text-sm">
+            <span class="stars" style="font-size:.78rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="rating-value">4.9</span>
+            <span class="text-secondary">(7 rides)</span>
+          </div>
+          <div class="text-sm text-secondary mt-05">Member since Feb 2026 · Burwood</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Invite / offer a ride -->
+    <div class="section-title">
+      <span>Offer a ride</span>
+    </div>
+
+    <div class="card">
+      <p class="text-sm text-secondary mb-1">This request matches your Burwood → CBD drive offer. Invite them to join your ride.</p>
+      <div class="form-group">
+        <label for="message">Message (optional)</label>
+        <textarea id="message" class="form-control" placeholder="e.g. Hi Lisa, I drive this route daily — you're welcome to join!"></textarea>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-primary" style="flex:1;">Send ride invite</button>
+        <a href="driving-detail.html" class="btn btn-outline">Cancel</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <a href="dashboard.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1h-2z"/></svg>
+      Home
+    </a>
+    <a href="driving.html" class="active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4"/></svg>
+      Driving
+    </a>
+    <a href="riding.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      Riding
+    </a>
+    <a href="profile.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4-4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      Profile
+    </a>
+  </nav>
+</body>
+</html>

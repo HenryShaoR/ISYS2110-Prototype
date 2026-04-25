@@ -8,14 +8,13 @@
 </head>
 <body>
   <header class="topbar">
-    <div class="topbar-brand">
+    <a href="dashboard.html" class="topbar-brand">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M12 2C8 2 4 6 4 10c0 5.25 7 11 8 12 1-1 8-6.75 8-12 0-4-4-8-8-8z"/>
         <circle cx="12" cy="10" r="3"/>
       </svg>
       NeighbourLink
-    </div>
-    <a href="index.html" class="text-sm" style="color:var(--color-danger);">Sign out</a>
+    </a>
   </header>
 
   <div class="page">
@@ -73,14 +72,14 @@
 
     <!-- Tabs: History / Reviews -->
     <div class="tabs mt-2">
-      <a class="tab active" href="#">Ride History</a>
-      <a class="tab" href="#">Reviews (9)</a>
+      <a class="tab active" href="profile.html">Ride History</a>
+      <a class="tab" href="profile-reviews.html">Reviews (9)</a>
     </div>
 
     <!-- Ride history -->
     <div class="card">
       <div class="flex-col" style="gap:0;">
-        <div style="padding:.6rem 0;border-bottom:1px solid var(--color-border);">
+        <a href="past-ride-driving.html" style="padding:.6rem 0;border-bottom:1px solid var(--color-border);text-decoration:none;color:inherit;display:block;">
           <div class="flex-between text-sm">
             <span>24 Apr · Burwood → CBD</span>
             <span class="badge badge-offer" style="font-size:.68rem;">Driver</span>
@@ -89,8 +88,8 @@
             <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
             <span class="badge badge-confirmed" style="font-size:.68rem;">Completed</span>
           </div>
-        </div>
-        <div style="padding:.6rem 0;border-bottom:1px solid var(--color-border);">
+        </a>
+        <a href="past-ride-driving.html" style="padding:.6rem 0;border-bottom:1px solid var(--color-border);text-decoration:none;color:inherit;display:block;">
           <div class="flex-between text-sm">
             <span>22 Apr · CBD → Burwood</span>
             <span class="badge badge-offer" style="font-size:.68rem;">Driver</span>
@@ -99,18 +98,18 @@
             <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
             <span class="badge badge-confirmed" style="font-size:.68rem;">Completed</span>
           </div>
-        </div>
-        <div style="padding:.6rem 0;border-bottom:1px solid var(--color-border);">
+        </a>
+        <a href="past-ride-driving.html" style="padding:.6rem 0;border-bottom:1px solid var(--color-border);text-decoration:none;color:inherit;display:block;">
           <div class="flex-between text-sm">
             <span>20 Apr · Burwood → CBD</span>
             <span class="badge badge-offer" style="font-size:.68rem;">Driver</span>
           </div>
           <div class="flex-between mt-05">
-            <a href="rate.html" class="btn btn-outline btn-sm" style="padding:.3rem .6rem;font-size:.75rem;">Rate ride</a>
+            <span class="badge badge-request" style="font-size:.68rem;">Not rated yet</span>
             <span class="badge badge-confirmed" style="font-size:.68rem;">Completed</span>
           </div>
-        </div>
-        <div style="padding:.6rem 0;border-bottom:1px solid var(--color-border);">
+        </a>
+        <a href="past-ride-riding.html" style="padding:.6rem 0;border-bottom:1px solid var(--color-border);text-decoration:none;color:inherit;display:block;">
           <div class="flex-between text-sm">
             <span>18 Apr · Strathfield → Parramatta</span>
             <span class="badge badge-request" style="font-size:.68rem;">Rider</span>
@@ -119,8 +118,8 @@
             <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
             <span class="badge badge-confirmed" style="font-size:.68rem;">Completed</span>
           </div>
-        </div>
-        <div style="padding:.6rem 0;">
+        </a>
+        <a href="past-ride-riding.html" style="padding:.6rem 0;text-decoration:none;color:inherit;display:block;">
           <div class="flex-between text-sm">
             <span>12 Apr · Homebush → Olympic Park</span>
             <span class="badge badge-request" style="font-size:.68rem;">Rider</span>
@@ -129,60 +128,13 @@
             <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
             <span class="badge badge-confirmed" style="font-size:.68rem;">Completed</span>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Reviews -->
-    <div class="card">
-      <div class="card-header">
-        <h3>Reviews</h3>
-        <span class="text-sm text-secondary">9 reviews</span>
-      </div>
-
-      <div class="review-item">
-        <div class="review-header">
-          <span class="avatar avatar-sm">SC</span>
-          <strong style="font-size:.84rem;">Sarah Chen</strong>
-          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        </div>
-        <p class="review-text">Wonderful driver — always on time and so friendly!</p>
-        <div class="text-sm text-secondary mt-05">2 days ago</div>
-      </div>
-
-      <div class="review-item">
-        <div class="review-header">
-          <span class="avatar avatar-sm">DP</span>
-          <strong style="font-size:.84rem;">Daniel Park</strong>
-          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        </div>
-        <p class="review-text">Great ride, very smooth. Appreciated the wait!</p>
-        <div class="text-sm text-secondary mt-05">1 week ago</div>
-      </div>
-
-      <div class="review-item">
-        <div class="review-header">
-          <span class="avatar avatar-sm">JL</span>
-          <strong style="font-size:.84rem;">James Lee</strong>
-          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;<span class="empty">&#9733;</span></span>
-        </div>
-        <p class="review-text">Good ride overall. Pick-up was easy to find.</p>
-        <div class="text-sm text-secondary mt-05">2 weeks ago</div>
-      </div>
-
-      <div class="review-item">
-        <div class="review-header">
-          <span class="avatar avatar-sm">LT</span>
-          <strong style="font-size:.84rem;">Lisa Tran</strong>
-          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        </div>
-        <p class="review-text">Five stars! Made me feel very safe.</p>
-        <div class="text-sm text-secondary mt-05">3 weeks ago</div>
+        </a>
       </div>
     </div>
 
     <!-- Edit profile button -->
     <button class="btn btn-outline btn-block mt-2">Edit profile</button>
+    <a href="index.html" class="btn btn-danger-outline btn-block mt-1">Sign out</a>
   </div>
 
   <!-- Bottom Navigation -->

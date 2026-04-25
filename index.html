@@ -23,7 +23,7 @@
       <h1>Welcome back</h1>
       <p class="subtitle">Sign in to your account</p>
 
-      <form action="dashboard.html">
+      <form onsubmit="event.preventDefault(); window.location.href=document.getElementById('email').value.includes('@admin.com')  ? 'admin.html' : 'dashboard.html';">
         <div class="form-group">
           <label for="email">Email address</label>
           <input type="email" id="email" class="form-control" placeholder="you@example.com" value="emma.wilson@email.com">

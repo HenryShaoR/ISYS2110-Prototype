@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>NeighbourLink — Daniel Park</title>
+  <title>NeighbourLink — Profile · Reviews</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,32 +18,34 @@
   </header>
 
   <div class="page">
+    <!-- Profile card -->
     <div class="card" style="text-align:center;">
-      <div class="avatar avatar-lg" style="margin:0 auto .5rem;">DP</div>
-      <h2 style="font-size:1.2rem;">Daniel Park</h2>
-      <p class="text-sm text-secondary">Member since Feb 2026 · Burwood, NSW</p>
+      <div class="avatar avatar-lg" style="margin:0 auto .5rem;">EW</div>
+      <h2 style="font-size:1.2rem;">Emma Wilson</h2>
+      <p class="text-sm text-secondary">Member since Jan 2026 · Burwood, NSW</p>
 
       <div style="margin:.75rem 0;">
-        <span class="stars" style="font-size:1rem;">&#9733;&#9733;&#9733;&#9733;<span class="empty">&#9733;</span></span>
-        <span class="rating-value" style="font-size:.95rem;">4.3</span>
+        <span class="stars" style="font-size:1rem;">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="empty"></span></span>
+        <span class="rating-value" style="font-size:.95rem;">4.8</span>
       </div>
 
       <div class="profile-stats" style="justify-content:center;">
         <div class="p-stat">
-          <strong>8</strong>
+          <strong>12</strong>
           Rides
         </div>
         <div class="p-stat">
-          <strong>2</strong>
+          <strong>8</strong>
           As driver
         </div>
         <div class="p-stat">
-          <strong>6</strong>
+          <strong>4</strong>
           As rider
         </div>
       </div>
     </div>
 
+    <!-- Trust & verification -->
     <div class="card">
       <div class="card-header">
         <h3>Trust &amp; verification</h3>
@@ -58,16 +60,52 @@
           <span style="color:var(--color-success);">Verified ✓</span>
         </div>
         <div class="flex-between">
+          <span class="text-secondary">Identity</span>
+          <span class="text-secondary">Not verified</span>
+        </div>
+        <div class="flex-between">
           <span class="text-secondary">Response rate</span>
-          <span>88%</span>
+          <span>95%</span>
         </div>
       </div>
     </div>
 
+    <!-- Tabs: History / Reviews -->
+    <div class="tabs mt-2">
+      <a class="tab" href="profile.html">Ride History</a>
+      <a class="tab active" href="profile-reviews.html">Reviews (9)</a>
+    </div>
+
+    <!-- Reviews -->
     <div class="card">
-      <div class="card-header">
-        <h3>Reviews</h3>
-        <span class="text-sm text-secondary">6 reviews</span>
+      <div class="review-item">
+        <div class="review-header">
+          <span class="avatar avatar-sm">SC</span>
+          <strong style="font-size:.84rem;">Sarah Chen</strong>
+          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
+        <p class="review-text">Wonderful driver — always on time and so friendly!</p>
+        <div class="text-sm text-secondary mt-05">2 days ago</div>
+      </div>
+
+      <div class="review-item">
+        <div class="review-header">
+          <span class="avatar avatar-sm">DP</span>
+          <strong style="font-size:.84rem;">Daniel Park</strong>
+          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
+        <p class="review-text">Great ride, very smooth. Appreciated the wait!</p>
+        <div class="text-sm text-secondary mt-05">1 week ago</div>
+      </div>
+
+      <div class="review-item">
+        <div class="review-header">
+          <span class="avatar avatar-sm">JL</span>
+          <strong style="font-size:.84rem;">James Lee</strong>
+          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;<span class="empty">&#9733;</span></span>
+        </div>
+        <p class="review-text">Good ride overall. Pick-up was easy to find.</p>
+        <div class="text-sm text-secondary mt-05">2 weeks ago</div>
       </div>
 
       <div class="review-item">
@@ -76,30 +114,24 @@
           <strong style="font-size:.84rem;">Lisa Tran</strong>
           <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
         </div>
-        <p class="review-text">Daniel was a great passenger — very polite and on time.</p>
-        <div class="text-sm text-secondary mt-05">1 week ago</div>
-      </div>
-
-      <div class="review-item">
-        <div class="review-header">
-          <span class="avatar avatar-sm">SC</span>
-          <strong style="font-size:.84rem;">Sarah Chen</strong>
-          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;<span class="empty">&#9733;</span></span>
-        </div>
-        <p class="review-text">Good rider. Arrived at the pick-up point promptly.</p>
-        <div class="text-sm text-secondary mt-05">2 weeks ago</div>
+        <p class="review-text">Five stars! Made me feel very safe.</p>
+        <div class="text-sm text-secondary mt-05">3 weeks ago</div>
       </div>
 
       <div class="review-item">
         <div class="review-header">
           <span class="avatar avatar-sm">MS</span>
           <strong style="font-size:.84rem;">Maria Santos</strong>
-          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;<span class="empty">&#9733;</span></span>
+          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
         </div>
-        <p class="review-text">Shared a ride to Olympic Park — easy to communicate with.</p>
-        <div class="text-sm text-secondary mt-05">3 weeks ago</div>
+        <p class="review-text">Really enjoyed the ride. Car was clean and Emma was lovely.</p>
+        <div class="text-sm text-secondary mt-05">1 month ago</div>
       </div>
     </div>
+
+    <!-- Edit profile button -->
+    <button class="btn btn-outline btn-block mt-2">Edit profile</button>
+    <a href="index.html" class="btn btn-danger-outline btn-block mt-1">Sign out</a>
   </div>
 
   <!-- Bottom Navigation -->
@@ -116,7 +148,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
       Riding
     </a>
-    <a href="profile.html">
+    <a href="profile.html" class="active">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4-4v2"/><circle cx="12" cy="7" r="4"/></svg>
       Profile
     </a>
