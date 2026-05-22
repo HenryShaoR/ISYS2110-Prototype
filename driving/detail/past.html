@@ -35,45 +35,43 @@
 
       <div class="info-grid">
         <div class="info-item">
-          <div class="info-label">Date</div>
-          <div class="info-value">22 Apr 2026</div>
-        </div>
-        <div class="info-item">
-          <div class="info-label">Time</div>
-          <div class="info-value">7:30 AM</div>
-        </div>
-        <div class="info-item">
-          <div class="info-label">Your role</div>
-          <div class="info-value">Driver</div>
+          <div class="info-label">Date &amp; Time</div>
+          <div class="info-value">Wed 22 Apr, 7:30 AM</div>
         </div>
         <div class="info-item">
           <div class="info-label">Income</div>
           <div class="info-value info-price">$5.00</div>
         </div>
-      </div>
-    </div>
-
-    <!-- Show the rider (opposite user) -->
-    <div class="section-title">
-      <span>Rider</span>
-    </div>
-
-    <div class="card">
-      <div class="ride-user" style="gap:.75rem;">
-        <a href="../../profile/other.html" class="avatar">SC</a>
-        <div style="flex:1;">
-          <a href="../../profile/other.html" class="fw-500 text-88">Sarah Chen</a>
-          <div class="text-sm text-secondary">&#9733; 4.6 · 10 rides</div>
+        <div class="info-item">
+          <div class="info-label">Duration</div>
+          <div class="info-value">~35 min</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Status</div>
+          <div class="info-value success fw-600">Completed</div>
         </div>
       </div>
     </div>
 
-    <!-- Rate the rider -->
+    <!-- Rider & Rating Section -->
     <div class="section-title">
-      <span>Rate this rider</span>
+      <span>Rider &amp; Rating</span>
     </div>
 
-    <div class="card" style="text-align:center;">
+    <div class="card" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+      <!-- Avatar -->
+      <a href="../../profile/other.html" class="avatar avatar-lg" style="margin-bottom: 0.5rem;">SC</a>
+      
+      <!-- Name -->
+      <a href="../../profile/other.html" class="fw-600" style="font-size: 1.25rem; color: inherit; display: block;">Sarah Chen</a>
+      
+      <!-- Current Rating -->
+      <div class="text-sm text-secondary mt-05">&#9733; 4.6 · 10 rides</div>
+      
+      <!-- Divider -->
+      <hr class="divider" style="width: 100%; margin: 1rem 0;">
+      
+      <!-- Rate the journey -->
       <p class="text-sm text-secondary mb-1">How was your experience with Sarah?</p>
       <div class="star-select" style="margin-bottom:.5rem;">
         <input type="radio" id="d5" name="rating" value="5"><label for="d5">&#9733;</label>

@@ -758,6 +758,20 @@ th {
 }
 
 .list-item:hover { border-color: var(--color-primary); }
+.list-item-part {
+  transition: background-color .15s;
+}
+.list-item-part:hover {
+  background-color: var(--color-primary-light);
+}
+.list-item-part-top {
+  border-top-left-radius: calc(var(--radius) - 1px);
+  border-top-right-radius: calc(var(--radius) - 1px);
+}
+.list-item-part-bottom {
+  border-bottom-left-radius: calc(var(--radius) - 1px);
+  border-bottom-right-radius: calc(var(--radius) - 1px);
+}
 .list-item + .list-item { margin-top: .5rem; }
 .list-item .list-item-body { flex: 1; min-width: 0; }
 .list-item .list-item-right { flex-shrink: 0; color: var(--color-text-secondary); font-size: .85rem; }

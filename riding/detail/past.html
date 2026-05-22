@@ -53,27 +53,25 @@
       </div>
     </div>
 
-    <!-- Show the driver (opposite user) -->
+    <!-- Driver & Rating Section -->
     <div class="section-title">
-      <span>Driver</span>
+      <span>Driver &amp; Rating</span>
     </div>
 
-    <div class="card">
-      <div class="ride-user" style="gap:.75rem;">
-        <a href="../../profile/other.html" class="avatar">LT</a>
-        <div style="flex:1;">
-          <a href="../../profile/other.html" class="fw-500 text-88">Lisa Tran</a>
-          <div class="text-sm text-secondary">&#9733; 4.9 · 7 rides</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Rate the driver -->
-    <div class="section-title">
-      <span>Rate this driver</span>
-    </div>
-
-    <div class="card" style="text-align:center;">
+    <div class="card" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+      <!-- Avatar -->
+      <a href="../../profile/other.html" class="avatar avatar-lg" style="margin-bottom: 0.5rem;">LT</a>
+      
+      <!-- Name -->
+      <a href="../../profile/other.html" class="fw-600" style="font-size: 1.25rem; color: inherit; display: block;">Lisa Tran</a>
+      
+      <!-- Current Rating -->
+      <div class="text-sm text-secondary mt-05">&#9733; 4.9 · 7 rides</div>
+      
+      <!-- Divider -->
+      <hr class="divider" style="width: 100%; margin: 1rem 0;">
+      
+      <!-- Rate the journey -->
       <p class="text-sm text-secondary mb-1">How was your ride with Lisa?</p>
       <div class="star-select" style="margin-bottom:.5rem;">
         <input type="radio" id="r5" name="rating" value="5"><label for="r5">&#9733;</label>

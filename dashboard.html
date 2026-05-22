@@ -43,45 +43,73 @@
       <span>Upcoming Rides</span>
     </div>
 
-    <a href="driving/detail/confirmed.html" class="list-item">
-      <div class="list-item-body">
-        <div class="flex-between mb-05">
+    <div class="list-item" style="flex-direction: column; align-items: stretch; padding: 0; gap: 0;">
+      <!-- Main Link (Route, Badge, Time) -->
+      <a href="driving/detail/confirmed.html" class="list-item-part list-item-part-top" style="color: inherit; display: block; padding: 0.85rem;">
+        <!-- Row 1: Route & Badge -->
+        <div class="flex-between">
+          <div class="ride-route">
+            <span class="dot"></span>
+            <strong>Burwood</strong>
+            <span class="line"></span>
+            <span class="dot dot-end"></span>
+            <strong>CBD</strong>
+          </div>
           <span class="badge badge-offer">Driving</span>
-          <span class="text-sm text-secondary">Tomorrow, 7:30 AM</span>
         </div>
-        <div class="ride-route">
-          <span class="dot"></span>
-          <strong>Burwood</strong>
-          <span class="line"></span>
-          <span class="dot dot-end"></span>
-          <strong>CBD</strong>
+        
+        <!-- Row 2: Date & Time -->
+        <div class="text-sm text-secondary mt-05">Tomorrow, 7:30 AM</div>
+      </a>
+      
+      <!-- Profile Link -->
+      <a href="profile/other.html" class="list-item-part list-item-part-bottom" style="color: inherit; display: block; padding: 0.75rem 0.85rem 0.85rem 0.85rem; border-top: 1px solid var(--color-border);">
+        <div class="text-xs text-secondary mb-05" style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.03em;">Rider:</div>
+        <div class="flex-between">
+          <div class="flex-center">
+            <div class="avatar avatar-sm">SC</div>
+            <span class="fw-500 text-88" style="margin-left: 0.5rem; color: var(--color-primary);">Sarah Chen</span>
+          </div>
+          <span class="stars text-78">
+            &#9733;&#9733;&#9733;&#9733;<span class="empty">&#9733;</span>
+          </span>
         </div>
-        <div class="ride-meta mt-05">
-          <span>1 rider confirmed</span>
-          <span>1 seat left</span>
-        </div>
-      </div>
-    </a>
+      </a>
+    </div>
 
-    <a href="riding/detail/confirmed.html" class="list-item">
-      <div class="list-item-body">
-        <div class="flex-between mb-05">
+    <div class="list-item" style="flex-direction: column; align-items: stretch; padding: 0; gap: 0;">
+      <!-- Main Link (Route, Badge, Time) -->
+      <a href="riding/detail/confirmed.html" class="list-item-part list-item-part-top" style="color: inherit; display: block; padding: 0.85rem;">
+        <!-- Row 1: Route & Badge -->
+        <div class="flex-between">
+          <div class="ride-route">
+            <span class="dot"></span>
+            <strong>Strathfield</strong>
+            <span class="line"></span>
+            <span class="dot dot-end"></span>
+            <strong>Parramatta</strong>
+          </div>
           <span class="badge badge-confirmed">Riding</span>
-          <span class="text-sm text-secondary">Mon 28 Apr, 8:00 AM</span>
         </div>
-        <div class="ride-route">
-          <span class="dot"></span>
-          <strong>Strathfield</strong>
-          <span class="line"></span>
-          <span class="dot dot-end"></span>
-          <strong>Parramatta</strong>
+        
+        <!-- Row 2: Date & Time -->
+        <div class="text-sm text-secondary mt-05">Mon 28 Apr, 8:00 AM</div>
+      </a>
+      
+      <!-- Profile Link -->
+      <a href="profile/other.html" class="list-item-part list-item-part-bottom" style="color: inherit; display: block; padding: 0.75rem 0.85rem 0.85rem 0.85rem; border-top: 1px solid var(--color-border);">
+        <div class="text-xs text-secondary mb-05" style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.03em;">Driver:</div>
+        <div class="flex-between">
+          <div class="flex-center">
+            <div class="avatar avatar-sm">JL</div>
+            <span class="fw-500 text-88" style="margin-left: 0.5rem; color: var(--color-primary);">James Lee</span>
+          </div>
+          <span class="stars text-78">
+            &#9733;&#9733;&#9733;&#9733;&#9733;
+          </span>
         </div>
-        <div class="ride-meta mt-05">
-          <span>Driver: James Lee</span>
-          <span>&#9733; 5.0</span>
-        </div>
-      </div>
-    </a>
+      </a>
+    </div>
 
     <!-- Notifications -->
     <div class="section-title">
