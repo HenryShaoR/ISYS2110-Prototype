@@ -16,6 +16,7 @@
 
   <div class="page">
     <div class="card">
+      <span class="card-header fw-500">Ride Information</span>
       <div class="route-visual">
         <div class="route-point">
           <div class="label">Pick-up</div>
@@ -34,16 +35,12 @@
           <div class="info-value">Sun 4 May, 1:30 PM</div>
         </div>
         <div class="info-item">
-          <div class="info-label">Trip type</div>
-          <div class="info-value">One-off</div>
-        </div>
-        <div class="info-item">
           <div class="info-label">Seats available</div>
           <div class="info-value">2</div>
         </div>
         <div class="info-item">
-          <div class="info-label">Cost</div>
-          <div class="info-value">$3 / ride</div>
+          <div class="info-label">Price</div>
+          <div class="info-value">Proposed by you</div>
         </div>
       </div>
       <p class="text-sm text-secondary mt-1">Heading to Olympic Park for the day. Can pick up along Parramatta Road.</p>
@@ -69,19 +66,28 @@
       </div>
     </div>
 
-    <!-- Request to join -->
+    <!-- Send a Ride Application -->
     <div class="section-title">
-      <span>Request to join this ride</span>
+      <span>Send a Ride Application</span>
     </div>
 
     <div class="card">
-      <p class="text-sm text-secondary mb-1">Send a request to the driver. They'll review your profile and decide.</p>
+      <p class="text-sm text-secondary mb-1">Apply to join this ride by sending a Ride Application. The driver will review your request details.</p>
+      <div class="form-group">
+        <label for="attach-request">Attach active Ride Request</label>
+        <select id="attach-request" class="form-control">
+          <option value="req-1">Ashfield → Bicentennial Park (Sun 4 May, 2:00 PM) · 1 passenger · Proposed $5.00</option>
+          <option value="req-new">+ Create a new Ride Request...</option>
+        </select>
+        <p class="form-hint">Your proposed price, route, and passenger count are linked to this request. Drivers see your whole request.</p>
+      </div>
+
       <div class="form-group">
         <label for="message">Message (optional)</label>
         <textarea id="message" class="form-control" placeholder="e.g. Hi Sarah, I'm heading to Bicentennial Park nearby — this fits perfectly!"></textarea>
       </div>
       <div class="btn-group">
-        <button class="btn btn-primary" style="flex:1;">Send ride request</button>
+        <button class="btn btn-primary" style="flex:1;">Send Ride Application</button>
         <a href="riding-detail.html" class="btn btn-outline">Cancel</a>
       </div>
     </div>

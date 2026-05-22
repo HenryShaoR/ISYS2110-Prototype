@@ -21,23 +21,21 @@
       <h2 style="font-size:1.2rem;">Emma Wilson</h2>
       <p class="text-sm text-secondary">Member since Jan 2026 · Burwood, NSW</p>
 
-      <div style="margin:.75rem 0;">
-        <span class="stars" style="font-size:1rem;">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="empty"></span></span>
-        <span class="rating-value" style="font-size:.95rem;">4.8</span>
-      </div>
-
-      <div class="profile-stats" style="justify-content:center;">
-        <div class="p-stat">
-          <strong>12</strong>
-          Rides
+      <!-- Dual rating boxes -->
+      <div style="display: flex; gap: .75rem; justify-content: center; margin: 1rem 0;">
+        <!-- As driver -->
+        <div style="flex: 1; border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: .75rem; text-align: center; background: var(--color-surface); box-shadow: var(--shadow-sm);">
+          <div class="stars" style="font-size: .9rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div style="font-size: 1.1rem; font-weight: 700; margin: .25rem 0 .1rem;">4.9/5</div>
+          <div style="font-size: .78rem; font-weight: 600; color: var(--color-text);">8 drives</div>
+          <div style="font-size: .72rem; color: var(--color-text-secondary); margin-top: .15rem; text-transform: uppercase; letter-spacing: .02em; font-weight: 500;">As driver</div>
         </div>
-        <div class="p-stat">
-          <strong>8</strong>
-          As driver
-        </div>
-        <div class="p-stat">
-          <strong>4</strong>
-          As rider
+        <!-- As rider -->
+        <div style="flex: 1; border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: .75rem; text-align: center; background: var(--color-surface); box-shadow: var(--shadow-sm);">
+          <div class="stars" style="font-size: .9rem;">&#9733;&#9733;&#9733;&#9733;<span class="empty">&#9733;</span></div>
+          <div style="font-size: 1.1rem; font-weight: 700; margin: .25rem 0 .1rem;">4.7/5</div>
+          <div style="font-size: .78rem; font-weight: 600; color: var(--color-text);">4 rides</div>
+          <div style="font-size: .72rem; color: var(--color-text-secondary); margin-top: .15rem; text-transform: uppercase; letter-spacing: .02em; font-weight: 500;">As rider</div>
         </div>
       </div>
     </div>
@@ -61,6 +59,10 @@
           <span class="text-secondary">Not verified</span>
         </div>
         <div class="flex-between">
+          <span class="text-secondary">Driver's license</span>
+          <span style="color:var(--color-success);">Verified ✓</span>
+        </div>
+        <div class="flex-between">
           <span class="text-secondary">Response rate</span>
           <span>95%</span>
         </div>
@@ -70,59 +72,95 @@
     <!-- Tabs: History / Reviews -->
     <div class="tabs mt-2">
       <a class="tab" href="profile.html">Ride History</a>
-      <a class="tab active" href="profile-reviews.html">Reviews (9)</a>
+      <a class="tab active" href="profile-reviews.html">Ratings (12)</a>
     </div>
 
     <!-- Reviews -->
-    <div class="card">
-      <div class="review-item">
-        <div class="review-header">
-          <span class="avatar avatar-sm">SC</span>
-          <strong style="font-size:.84rem;">Sarah Chen</strong>
-          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+    <!-- Ratings -->
+    <div class="flex-col" style="gap: .75rem;">
+      <!-- Rating 1 -->
+      <div class="card" style="padding: 1rem;">
+        <div class="flex-between" style="align-items: flex-start; margin-bottom: .75rem;">
+          <div class="flex" style="gap: .65rem; align-items: center;">
+            <span class="avatar" style="width: 36px; height: 36px; font-size: .8rem;">SC</span>
+            <div>
+              <strong style="font-size: .9rem; display: block; line-height: 1.2;">Sarah Chen</strong>
+              <span class="text-secondary" style="font-size: .75rem; display: block; margin-top: 2px;">2 days ago</span>
+            </div>
+          </div>
+          <span class="badge badge-offer" style="font-size: .68rem;">Driving</span>
         </div>
-        <p class="review-text">Wonderful driver — always on time and so friendly!</p>
-        <div class="text-sm text-secondary mt-05">2 days ago</div>
+        <div class="text-center" style="margin: 1.25rem 0 .5rem;">
+          <span class="stars" style="font-size: 1.8rem; letter-spacing: 2px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
       </div>
 
-      <div class="review-item">
-        <div class="review-header">
-          <span class="avatar avatar-sm">DP</span>
-          <strong style="font-size:.84rem;">Daniel Park</strong>
-          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <!-- Rating 2 -->
+      <div class="card" style="padding: 1rem;">
+        <div class="flex-between" style="align-items: flex-start; margin-bottom: .75rem;">
+          <div class="flex" style="gap: .65rem; align-items: center;">
+            <span class="avatar" style="width: 36px; height: 36px; font-size: .8rem;">DP</span>
+            <div>
+              <strong style="font-size: .9rem; display: block; line-height: 1.2;">Daniel Park</strong>
+              <span class="text-secondary" style="font-size: .75rem; display: block; margin-top: 2px;">1 week ago</span>
+            </div>
+          </div>
+          <span class="badge badge-request" style="font-size: .68rem;">Riding</span>
         </div>
-        <p class="review-text">Great ride, very smooth. Appreciated the wait!</p>
-        <div class="text-sm text-secondary mt-05">1 week ago</div>
+        <div class="text-center" style="margin: 1.25rem 0 .5rem;">
+          <span class="stars" style="font-size: 1.8rem; letter-spacing: 2px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
       </div>
 
-      <div class="review-item">
-        <div class="review-header">
-          <span class="avatar avatar-sm">JL</span>
-          <strong style="font-size:.84rem;">James Lee</strong>
-          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;<span class="empty">&#9733;</span></span>
+      <!-- Rating 3 -->
+      <div class="card" style="padding: 1rem;">
+        <div class="flex-between" style="align-items: flex-start; margin-bottom: .75rem;">
+          <div class="flex" style="gap: .65rem; align-items: center;">
+            <span class="avatar" style="width: 36px; height: 36px; font-size: .8rem;">JL</span>
+            <div>
+              <strong style="font-size: .9rem; display: block; line-height: 1.2;">James Lee</strong>
+              <span class="text-secondary" style="font-size: .75rem; display: block; margin-top: 2px;">2 weeks ago</span>
+            </div>
+          </div>
+          <span class="badge badge-offer" style="font-size: .68rem;">Driving</span>
         </div>
-        <p class="review-text">Good ride overall. Pick-up was easy to find.</p>
-        <div class="text-sm text-secondary mt-05">2 weeks ago</div>
+        <div class="text-center" style="margin: 1.25rem 0 .5rem;">
+          <span class="stars" style="font-size: 1.8rem; letter-spacing: 2px;">&#9733;&#9733;&#9733;&#9733;<span class="empty">&#9733;</span></span>
+        </div>
       </div>
 
-      <div class="review-item">
-        <div class="review-header">
-          <span class="avatar avatar-sm">LT</span>
-          <strong style="font-size:.84rem;">Lisa Tran</strong>
-          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <!-- Rating 4 -->
+      <div class="card" style="padding: 1rem;">
+        <div class="flex-between" style="align-items: flex-start; margin-bottom: .75rem;">
+          <div class="flex" style="gap: .65rem; align-items: center;">
+            <span class="avatar" style="width: 36px; height: 36px; font-size: .8rem;">LT</span>
+            <div>
+              <strong style="font-size: .9rem; display: block; line-height: 1.2;">Lisa Tran</strong>
+              <span class="text-secondary" style="font-size: .75rem; display: block; margin-top: 2px;">3 weeks ago</span>
+            </div>
+          </div>
+          <span class="badge badge-request" style="font-size: .68rem;">Riding</span>
         </div>
-        <p class="review-text">Five stars! Made me feel very safe.</p>
-        <div class="text-sm text-secondary mt-05">3 weeks ago</div>
+        <div class="text-center" style="margin: 1.25rem 0 .5rem;">
+          <span class="stars" style="font-size: 1.8rem; letter-spacing: 2px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
       </div>
 
-      <div class="review-item">
-        <div class="review-header">
-          <span class="avatar avatar-sm">MS</span>
-          <strong style="font-size:.84rem;">Maria Santos</strong>
-          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <!-- Rating 5 -->
+      <div class="card" style="padding: 1rem;">
+        <div class="flex-between" style="align-items: flex-start; margin-bottom: .75rem;">
+          <div class="flex" style="gap: .65rem; align-items: center;">
+            <span class="avatar" style="width: 36px; height: 36px; font-size: .8rem;">MS</span>
+            <div>
+              <strong style="font-size: .9rem; display: block; line-height: 1.2;">Maria Santos</strong>
+              <span class="text-secondary" style="font-size: .75rem; display: block; margin-top: 2px;">1 month ago</span>
+            </div>
+          </div>
+          <span class="badge badge-offer" style="font-size: .68rem;">Driving</span>
         </div>
-        <p class="review-text">Really enjoyed the ride. Car was clean and Emma was lovely.</p>
-        <div class="text-sm text-secondary mt-05">1 month ago</div>
+        <div class="text-center" style="margin: 1.25rem 0 .5rem;">
+          <span class="stars" style="font-size: 1.8rem; letter-spacing: 2px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
       </div>
     </div>
 

@@ -24,33 +24,33 @@
         <div class="form-row">
           <div class="form-group">
             <label for="first-name">First name</label>
-            <input type="text" id="first-name" class="form-control" placeholder="Emma">
+            <input type="text" id="first-name" class="form-control" placeholder="Emma" required>
           </div>
           <div class="form-group">
             <label for="last-name">Last name</label>
-            <input type="text" id="last-name" class="form-control" placeholder="Wilson">
+            <input type="text" id="last-name" class="form-control" placeholder="Wilson" required>
           </div>
         </div>
         <div class="form-group">
           <label for="email">Email address</label>
-          <input type="email" id="email" class="form-control" placeholder="you@example.com">
+          <input type="email" id="email" class="form-control" placeholder="you@example.com" required>
         </div>
         <div class="form-group">
           <label for="phone">Phone number</label>
-          <input type="tel" id="phone" class="form-control" placeholder="0412 345 678">
+          <input type="tel" id="phone" class="form-control" placeholder="0412 345 678" pattern="0[0-9]{9}" required>
         </div>
         <div class="form-group">
           <label for="suburb">Suburb</label>
-          <input type="text" id="suburb" class="form-control" placeholder="e.g. Burwood">
+          <input type="text" id="suburb" class="form-control" placeholder="e.g. Burwood" required>
           <p class="form-hint">Used to suggest nearby rides within the council area</p>
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" id="password" class="form-control" placeholder="At least 8 characters">
+          <input type="password" id="password" class="form-control" placeholder="At least 8 characters" required>
         </div>
         <div class="form-group">
           <label for="confirm-password">Confirm password</label>
-          <input type="password" id="confirm-password" class="form-control" placeholder="Re-enter password">
+          <input type="password" id="confirm-password" class="form-control" placeholder="Re-enter password" required>
         </div>
         <button type="submit" class="btn btn-primary btn-block">Create account</button>
       </form>

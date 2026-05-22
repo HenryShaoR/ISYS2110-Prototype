@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>NeighbourLink — New Drive Offer</title>
+  <title>NeighbourLink — New Ride Offer</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -34,14 +34,6 @@
         <hr class="divider">
         <p class="text-sm text-secondary fw-500 mb-1">Schedule</p>
 
-        <div class="form-group">
-          <label for="trip-type">Trip type</label>
-          <select id="trip-type" class="form-control">
-            <option>Recurring (weekly)</option>
-            <option>One-off trip</option>
-          </select>
-        </div>
-
         <div class="form-row">
           <div class="form-group">
             <label for="date">Date</label>
@@ -61,23 +53,19 @@
             <option>3</option>
             <option>4</option>
           </select>
+          <p class="form-hint">A ride offer can be associated with at most one ride request (which can contain multiple passengers up to your seats).</p>
         </div>
 
         <hr class="divider">
-        <p class="text-sm text-secondary fw-500 mb-1">Cost</p>
-
-        <div class="form-group">
-          <label for="contribution">Suggested cost contribution (AUD)</label>
-          <input type="number" id="contribution" class="form-control" placeholder="0" min="0" step="1">
-          <p class="form-hint">System will calculate an estimate based on distance</p>
-        </div>
+        <p class="text-sm text-secondary fw-500 mb-1">Pricing Model</p>
+        <p class="text-sm text-secondary mb-1">ℹ️ Passengers will propose the price they would like to pay when requesting. You will see their proposed contribution on matching requests.</p>
 
         <div class="form-group">
           <label for="notes">Additional notes (optional)</label>
           <textarea id="notes" class="form-control" placeholder="e.g. Pick-up point details, car description..."></textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary btn-block">Post drive offer</button>
+        <button type="submit" class="btn btn-primary btn-block">Post Ride Offer</button>
       </form>
     </div>
   </div>
