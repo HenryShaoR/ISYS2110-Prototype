@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>NeighbourLink — Confirmed Ride</title>
+  <title>NeighbourLink — Ride Request Detail</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,16 +15,17 @@
   </header>
 
   <div class="page">
+    <!-- Request info -->
     <div class="card">
-      <span class="card-header fw-500">Ride Information</span>
+      <span class="card-header fw-500">Ride Request Information</span>
       <div class="route-visual">
         <div class="route-point">
           <div class="label">Pick-up</div>
-          <div class="location">Strathfield</div>
+          <div class="location">Burwood</div>
         </div>
         <div class="route-line-long"></div>
         <div class="route-point">
-          <div class="label">Drop-off</div>
+          <div class="label">Destination</div>
           <div class="location">Parramatta</div>
         </div>
       </div>
@@ -32,44 +33,85 @@
       <div class="info-grid">
         <div class="info-item">
           <div class="info-label">Date &amp; time</div>
-          <div class="info-value">Mon 28 Apr, 8:00 AM</div>
+          <div class="info-value">Sat 3 May, 10:00 AM</div>
         </div>
         <div class="info-item">
-          <div class="info-label">Your role</div>
-          <div class="info-value">Rider</div>
+          <div class="info-label">Proposed price</div>
+          <div class="info-value" style="color:var(--color-primary);font-weight:600;">$5.00</div>
         </div>
         <div class="info-item">
-          <div class="info-label">Your proposed price</div>
-          <div class="info-value">$4</div>
+          <div class="info-label">Passengers</div>
+          <div class="info-value">1</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Status</div>
+          <div class="info-value">0 offers received</div>
         </div>
       </div>
+      <p class="text-sm text-secondary mt-1">Heading to Parramatta Westfield for weekend shopping. Flexible on the pickup spot near Burwood Station!</p>
     </div>
 
-    <!-- Driver info -->
+    <!-- Ride Invitations Received (Empty State) -->
     <div class="section-title">
-      <span>Driver</span>
+      <span>Ride Invitations Received</span>
+      <span class="badge badge-pending" style="background:var(--color-border);color:var(--color-text);">0 invitations</span>
     </div>
 
-    <div class="card">
-      <div class="ride-user" style="gap:.75rem;">
-        <a href="profile-other.html" class="avatar">JL</a>
-        <div style="flex:1;">
-          <a href="profile-other.html" class="fw-500" style="font-size:.88rem;">James Lee</a>
-          <div class="text-sm">
-            <span class="stars" style="font-size:.78rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            <span class="rating-value">5.0</span>
-            <span class="text-secondary">(15 rides)</span>
-          </div>
-          <div class="text-sm text-secondary mt-05">Member since Jan 2026 · Strathfield</div>
+    <div class="card card-empty">
+      <div class="email-icon">✉</div>
+      <h2 class="card-empty-text">No invitations yet</h2>
+    </div>
+
+    <!-- Matching Ride Offers from the community -->
+    <div class="section-title">
+      <span>Matching Ride Offers</span>
+    </div>
+    <p class="text-sm text-secondary mb-1">Drive offers from the community that match your request. Scores calculated strictly using location overlaps and departure times (saving map service costs).</p>
+
+    <!-- Match 1: high score -->
+    <div class="match-item">
+      <div class="match-score high">91%</div>
+      <div class="match-item-body">
+        <div class="flex-between">
+          <a href="profile-other.html" class="fw-500" style="font-size:.88rem;">Daniel Park</a>
+          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;<span class="empty">&#9733;</span></span>
         </div>
+        <div class="ride-route mt-05" style="font-size:.82rem;">
+          <span class="dot"></span>
+          Burwood
+          <span class="line"></span>
+          <span class="dot dot-end"></span>
+          Parramatta
+        </div>
+        <div class="ride-meta mt-05">
+          <span>Sat 3 May, 9:45 AM</span>
+          <span>3 seats available</span>
+        </div>
+        <a href="ride-detail.html" class="btn btn-outline btn-sm mt-05">View &amp; request</a>
       </div>
     </div>
 
-    <!-- Ride status -->
-    <div class="card highlight-card" style="text-align:center;">
-      <p style="font-size:.88rem;font-weight:500;color:var(--color-primary);">This ride is confirmed</p>
-      <p class="text-sm text-secondary mt-05" style="margin-bottom: .75rem;">You'll be able to rate this ride once it's completed.</p>
-      <a href="riding-detail.html" class="btn btn-danger-outline btn-sm text-center" style="display:block;font-size:.8rem;padding:.4rem;">Cancel ride booking</a>
+    <!-- Match 2: medium score -->
+    <div class="match-item">
+      <div class="match-score medium">76%</div>
+      <div class="match-item-body">
+        <div class="flex-between">
+          <a href="profile-other.html" class="fw-500" style="font-size:.88rem;">Maria Santos</a>
+          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;<span class="empty">&#9733;</span></span>
+        </div>
+        <div class="ride-route mt-05" style="font-size:.82rem;">
+          <span class="dot"></span>
+          Croydon
+          <span class="line"></span>
+          <span class="dot dot-end"></span>
+          Parramatta
+        </div>
+        <div class="ride-meta mt-05">
+          <span>Sat 3 May, 10:15 AM</span>
+          <span>2 seats available</span>
+        </div>
+        <a href="ride-detail.html" class="btn btn-outline btn-sm mt-05">View &amp; request</a>
+      </div>
     </div>
   </div>
 

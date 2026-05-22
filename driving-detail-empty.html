@@ -17,7 +17,7 @@
   <div class="page">
     <!-- Route -->
     <div class="card">
-      <span class="card-header fw-500">Ride Information</span>
+      <span class="card-header fw-500">Offer Information</span>
       <div class="route-visual">
         <div class="route-point">
           <div class="label">Pick-up</div>
@@ -26,63 +26,89 @@
         <div class="route-line-long"></div>
         <div class="route-point">
           <div class="label">Drop-off</div>
-          <div class="location">CBD</div>
+          <div class="location">Olympic Park</div>
         </div>
       </div>
 
       <div class="info-grid">
         <div class="info-item">
           <div class="info-label">Schedule</div>
-          <div class="info-value">Fri 24 Apr, 7:30 AM</div>
+          <div class="info-value">Sat 3 May, 9:00 AM</div>
         </div>
         <div class="info-item">
-          <div class="info-label">Seats Available</div>
-          <div class="info-value">2</div>
+          <div class="info-label">Seats left</div>
+          <div class="info-value">4</div>
         </div>
         <div class="info-item">
           <div class="info-label">Duration</div>
-          <div class="info-value">~35 min</div>
+          <div class="info-value">~20 min</div>
         </div>
       </div>
-      <p class="text-sm text-secondary mt-1">I leave from Burwood Station car park. Happy to wait a few minutes.</p>
+      <p class="text-sm text-secondary mt-1">Driving to Olympic Park for a Saturday morning event. Happy to share the ride!</p>
     </div>
 
-    <!-- Confirmed Riders -->
+    <!-- Pending Ride Applications (Empty State) -->
     <div class="section-title">
-      <span>Confirmed Riders</span>
-      <span class="badge badge-confirmed">1 applicant</span>
+      <span>Pending Ride Applications</span>
+      <span class="badge badge-pending" style="background:var(--color-border);color:var(--color-text);">0 applications</span>
     </div>
 
+    <div class="card card-empty">
+      <div class="email-icon">✉</div>
+      <h2 class="card-empty-text">No applications yet</h2>
+    </div>
+
+    <!-- Matching Ride Requests from the community -->
+    <div class="section-title">
+      <span>Matching Ride Requests</span>
+    </div>
+    <p class="text-sm text-secondary mb-1">Community members looking for rides matching your route and time. Scores calculated strictly using location overlaps and departure times (saving map service costs).</p>
+
+    <!-- Match 1 -->
     <div class="match-item">
-      <div class="flex flex-col flex-center" style="flex-shrink:0;">
-        <div class="match-score high">92%</div>
-        <span class="badge badge-confirmed mt-05" style="font-size:.65rem;padding:.1rem .35rem;">Confirmed</span>
-      </div>
+      <div class="match-score high">92%</div>
       <div class="match-item-body">
         <div class="flex-between">
-          <a href="profile-other.html" class="fw-500" style="font-size:.88rem;">Sarah Chen</a>
-          <div class="text-sm">
-            <span class="stars" style="font-size:.75rem;color:var(--color-star);">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            <span class="rating-value" style="font-size:.78rem;">4.6</span>
-            <span class="text-secondary" style="font-size:.75rem;">(10 rides)</span>
-          </div>
+          <a href="profile-other.html" class="fw-500" style="font-size:.88rem;">Lisa Tran</a>
+          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
         </div>
         <div class="ride-route mt-05" style="font-size:.82rem;">
           <span class="dot"></span>
           Burwood
           <span class="line"></span>
           <span class="dot dot-end"></span>
-          Town Hall
+          Olympic Park
         </div>
         <div class="ride-meta mt-05">
-          <span>Fri 24 Apr, 7:35 AM</span>
+          <span>Sat 3 May, 9:15 AM</span>
+          <span>1 passenger</span>
+          <span style="color:var(--color-primary);font-weight:600;">Proposed: $5.00</span>
+        </div>
+        <a href="ride-detail-request.html" class="btn btn-outline btn-sm mt-05">View &amp; invite</a>
+      </div>
+    </div>
+
+    <!-- Match 2 -->
+    <div class="match-item">
+      <div class="match-score medium">78%</div>
+      <div class="match-item-body">
+        <div class="flex-between">
+          <a href="profile-other.html" class="fw-500" style="font-size:.88rem;">Amy Nguyen</a>
+          <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
+        <div class="ride-route mt-05" style="font-size:.82rem;">
+          <span class="dot"></span>
+          Strathfield
+          <span class="line"></span>
+          <span class="dot dot-end"></span>
+          Olympic Park
+        </div>
+        <div class="ride-meta mt-05">
+          <span>Sat 3 May, 8:45 AM</span>
           <span>2 passengers</span>
-          <span style="color:var(--color-success);font-weight:600;">Proposed: $5.00</span>
+          <span style="color:var(--color-primary);font-weight:600;">Proposed: $8.00</span>
         </div>
-        <p class="text-sm text-secondary mt-05" style="font-style: italic; border-left: 2px solid var(--color-border); padding-left: .5rem; margin: .5rem 0;">"We're a group of two heading to the office. Flexible on pickup location!"</p>
-        <div style="margin-top: .75rem;">
-          <a href="driving-detail-pending.html" class="btn btn-danger-outline btn-sm text-center" style="display:block;font-size:.8rem;padding:.4rem;">Cancel confirmed match</a>
-        </div>
+        <a href="ride-detail-request.html" class="btn btn-outline btn-sm mt-05">View &amp; invite</a>
       </div>
     </div>
   </div>

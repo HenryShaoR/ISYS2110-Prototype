@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>NeighbourLink — New Ride Request</title>
+  <title>NeighbourLink — Ride Confirmed</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,63 +15,45 @@
   </header>
 
   <div class="page">
-    <div class="card">
-      <form action="riding.html">
-        <p class="card-header fw-500">Route</p>
+    <div class="card" style="text-align:center;padding:2rem 1.25rem;">
+      <div style="width:56px;height:56px;border-radius:50%;background:var(--color-success-light);color:var(--color-success);display:inline-flex;align-items:center;justify-content:center;font-size:1.6rem;margin-bottom:.75rem;">
+        &#10003;
+      </div>
+      <h1 style="font-size:1.3rem;margin-bottom:.35rem;">Ride confirmed!</h1>
+      <p class="text-sm text-secondary" style="margin-bottom:1.25rem;">
+        You accepted <strong>Daniel Park's</strong> application for <strong>Burwood → CBD</strong>.<br>
+        A confirmation has been sent to both of you.
+      </p>
 
-        <div class="form-group">
-          <label for="pickup">Pick-up location</label>
-          <input type="text" id="pickup" class="form-control" placeholder="e.g. Ashfield" required>
-          <p class="form-hint">Must be within the local council area</p>
-        </div>
-
-        <div class="form-group">
-          <label for="destination">Destination</label>
-          <input type="text" id="destination" class="form-control" placeholder="e.g. Bicentennial Park" required>
-          <p class="form-hint">Must be within the local council area</p>
-        </div>
-
-        <hr class="divider">
-        <p class="card-header fw-500">Schedule</p>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="date">Date</label>
-            <input type="date" id="date" class="form-control" required>
+      <div class="card" style="text-align:left;background:var(--color-bg);border:none;">
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="info-label">Route</div>
+            <div class="info-value">Burwood → CBD</div>
           </div>
-          <div class="form-group">
-            <label for="time">Preferred time</label>
-            <input type="time" id="time" class="form-control" required>
+          <div class="info-item">
+            <div class="info-label">Schedule</div>
+            <div class="info-value">Fri 24 Apr, 7:30 AM</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Driver</div>
+            <div class="info-value">Emma Wilson</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Rider</div>
+            <div class="info-value">Daniel Park</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Proposed price</div>
+            <div class="info-value" style="color:var(--color-primary);font-weight:600;">$5.00</div>
           </div>
         </div>
+      </div>
 
-        <div class="form-group">
-          <label for="passengers">Number of passengers</label>
-          <select id="passengers" class="form-control">
-            <option selected>1</option>
-            <option>2</option>
-            <option>3</option>
-          </select>
-        </div>
-
-        <hr class="divider">
-        <p class="card-header fw-500">Cost Contribution</p>
-
-        <div class="form-group">
-          <label for="price">Proposed price contribution (AUD)</label>
-          <input type="number" id="price" class="form-control" placeholder="e.g. 5" min="0" step="0.01" value="5" required>
-          <p class="form-hint">Propose a price you would like to pay for the ride</p>
-        </div>
-
-        <hr class="divider">
-
-        <div class="form-group">
-          <label for="notes">Additional notes (optional)</label>
-          <textarea id="notes" class="form-control" placeholder="e.g. Attending weekend event, flexible on pick-up time..."></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-block">Post Ride Request</button>
-      </form>
+      <div class="btn-group-stack mt-2">
+        <a href="driving-detail.html" class="btn btn-outline btn-block">View ride details</a>
+        <a href="dashboard.html" class="btn btn-primary btn-block">Back to home</a>
+      </div>
     </div>
   </div>
 
@@ -81,11 +63,11 @@
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
       Home
     </a>
-    <a href="driving.html">
+    <a href="driving.html" class="active">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-car-icon lucide-car"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
       Driving
     </a>
-    <a href="riding.html" class="active">
+    <a href="riding.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-round-icon lucide-users-round"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg>
       Riding
     </a>

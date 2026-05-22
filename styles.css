@@ -178,6 +178,27 @@ a.topbar-brand:hover { opacity: .75; }
 
 .card-section { margin-top: 1rem; }
 
+.card-empty {
+  text-align:center;
+  padding:2rem 1.25rem;
+  background:var(--color-bg);
+  border:2px dashed var(--color-border);
+  margin-bottom:1.5rem;"
+}
+
+.card-empty .email-icon {
+  font-size:2.2rem;
+  margin-bottom:.5rem;
+  opacity:.6;
+}
+
+.card-empty-text {
+  font-size:1rem;
+  font-weight:600;
+  margin-bottom:.25rem;
+  color:var(--color-text);
+}
+
 /* ---------- Buttons ---------- */
 
 .btn {
