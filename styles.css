@@ -580,6 +580,11 @@ textarea.form-control { resize: vertical; min-height: 80px; }
   margin-top: .05rem;
 }
 
+.info-price {
+  color:var(--color-primary);
+  font-weight:600;
+}
+
 /* ---------- Profile ---------- */
 
 .profile-header {
@@ -848,10 +853,21 @@ th {
 
 /* ---------- Utility ---------- */
 
+.success {color:var(--color-success);}
+
 .text-secondary { color: var(--color-text-secondary); }
+.text-65 { font-size: .65rem; }
+.text-68 { font-size: .68rem; }
+.text-75 { font-size: .75rem; }
 .text-sm { font-size: .78rem; }
+.text-78 { font-size: .78rem; }
+.text-82 { font-size: .82rem; }
+.text-86 { font-size: .86rem; }
+.text-88 { font-size: .88rem; }
+.text-90 { font-size: .9rem; }
 .text-center { text-align: center; }
 .fw-500 { font-weight: 500; }
+.fw-600 { font-weight: 600; }
 .mt-05 { margin-top: .35rem; }
 .mt-1 { margin-top: .5rem; }
 .mt-2 { margin-top: 1rem; }
