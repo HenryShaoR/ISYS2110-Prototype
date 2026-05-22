@@ -846,11 +846,6 @@ th {
   border-color: rgba(43, 103, 119, 0.25) !important;
 }
 
-.match-item-confirmed {
-  background: var(--color-success-light) !important;
-  border-color: rgba(82, 183, 136, 0.25) !important;
-}
-
 /* ---------- Utility ---------- */
 
 .text-secondary { color: var(--color-text-secondary); }

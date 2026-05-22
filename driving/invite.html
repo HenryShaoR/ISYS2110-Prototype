@@ -4,106 +4,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>NeighbourLink — Ride Request Detail</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
   <header class="topbar">
-    <a href="dashboard.html" class="topbar-brand">
+    <a href="../dashboard.html" class="topbar-brand">
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
       NeighbourLink
     </a>
   </header>
 
   <div class="page">
-    <!-- Request info -->
     <div class="card">
       <span class="card-header fw-500">Ride Information</span>
       <div class="route-visual">
         <div class="route-point">
           <div class="label">Pick-up</div>
-          <div class="location">Ashfield</div>
+          <div class="location">Burwood</div>
         </div>
         <div class="route-line-long"></div>
         <div class="route-point">
           <div class="label">Destination</div>
-          <div class="location">Bicentennial Park</div>
+          <div class="location">Town Hall</div>
         </div>
       </div>
 
       <div class="info-grid">
         <div class="info-item">
-          <div class="info-label">Date &amp; time</div>
-          <div class="info-value">Sun 4 May, 2:00 PM</div>
-        </div>
-        <div class="info-item">
-          <div class="info-label">Proposed price</div>
-          <div class="info-value" style="color:var(--color-primary);font-weight:600;">$5.00</div>
+          <div class="info-label">Schedule</div>
+          <div class="info-value">Fri 24 Apr, 7:45 AM</div>
         </div>
         <div class="info-item">
           <div class="info-label">Passengers</div>
           <div class="info-value">1</div>
         </div>
         <div class="info-item">
+          <div class="info-label">Proposed price</div>
+          <div class="info-value" style="color:var(--color-primary);font-weight:600;">$5.00</div>
+        </div>
+        <div class="info-item">
           <div class="info-label">Status</div>
-          <div class="info-value" style="color:var(--color-success);font-weight:600;">Confirmed</div>
+          <div class="info-value">Awaiting Ride Invitations</div>
         </div>
       </div>
-      <p class="text-sm text-secondary mt-1">Going to a weekend event at Bicentennial Park. Happy to pay proposed pricing!</p>
+      <p class="text-sm text-secondary mt-1">Looking for a ride to Town Hall for work. Happy to pay proposed pricing.</p>
     </div>
 
-    <!-- Confirmed Driver -->
+    <!-- Requester info -->
     <div class="section-title">
-      <span>Confirmed Driver</span>
-      <span class="badge badge-confirmed">Confirmed</span>
+      <span>Requester</span>
     </div>
 
-    <div class="match-item">
-      <div class="flex flex-col flex-center" style="flex-shrink:0;">
-        <div class="match-score high">94%</div>
-        <span class="badge badge-confirmed mt-05" style="font-size:.65rem;padding:.1rem .35rem;">Confirmed</span>
-      </div>
-      <div class="match-item-body">
-        <div class="flex-between">
-          <a href="profile-other.html" class="fw-500" style="font-size:.88rem;">James Lee</a>
+    <div class="card">
+      <div class="ride-user" style="gap:.75rem;">
+        <a href="../profile/other.html" class="avatar">LT</a>
+        <div style="flex:1;">
+          <a href="../profile/other.html" class="fw-500" style="font-size:.9rem;">Lisa Tran</a>
           <div class="text-sm">
-            <span class="stars" style="font-size:.75rem;color:var(--color-star);">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            <span class="rating-value" style="font-size:.78rem;">5.0</span>
-            <span class="text-secondary" style="font-size:.75rem;">(15 rides)</span>
+            <span class="stars" style="font-size:.78rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="rating-value">4.9</span>
+            <span class="text-secondary">(7 rides)</span>
           </div>
-        </div>
-        <div class="ride-route mt-05" style="font-size:.82rem;">
-          <span class="dot"></span>
-          Ashfield
-          <span class="line"></span>
-          <span class="dot dot-end"></span>
-          Bicentennial Park
-        </div>
-        <div class="ride-meta mt-05">
-          <span>Sun 4 May, 1:45 PM</span>
-          <span>2 seats available</span>
-        </div>
-        <p class="text-sm text-secondary mt-05" style="font-style: italic; border-left: 2px solid var(--color-border); padding-left: .5rem; margin: .5rem 0;">"Hi! I'm driving near Bicentennial Park that afternoon — happy to give you a lift from Ashfield."</p>
-        <div style="margin-top: .75rem;">
-          <a href="riding-detail.html" class="btn btn-danger-outline btn-sm text-center" style="display:block;font-size:.8rem;padding:.4rem;">Cancel ride booking</a>
+          <div class="text-sm text-secondary mt-05">Member since Feb 2026 · Burwood</div>
         </div>
       </div>
     </div>
+
+    <!-- Ride Invitation -->
+    <div class="section-title">
+      <span>Send a Ride Invitation</span>
+    </div>
+
+    <div class="card">
+      <div class="form-group">
+        <label for="message">Message (optional)</label>
+        <textarea id="message" class="form-control" placeholder="e.g. Hi Lisa, I drive this route daily — you're welcome to join!"></textarea>
+      </div>
+      <div class="btn-group">
+        <a href="detail/pending.html" class="btn btn-primary" style="flex:1;text-align:center;">Send Ride Invitation</a>
+        <a href="detail/pending.html" class="btn btn-outline" style="text-align:center;">Cancel</a>
+      </div>
+    </div>
+  </div>
 
   <!-- Bottom Navigation -->
   <nav class="bottom-nav">
-    <a href="dashboard.html">
+    <a href="../dashboard.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
       Home
     </a>
-    <a href="driving.html">
+    <a href="index.html" class="active">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-car-icon lucide-car"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
       Driving
     </a>
-    <a href="riding.html" class="active">
+    <a href="../riding/index.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-round-icon lucide-users-round"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg>
       Riding
     </a>
-    <a href="profile.html">
+    <a href="../profile/index.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-user-round-icon lucide-circle-user-round"><path d="M17.925 20.056a6 6 0 0 0-11.851.001"/><circle cx="12" cy="11" r="4"/><circle cx="12" cy="12" r="10"/></svg>
       Profile
     </a>

@@ -3,69 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>NeighbourLink — Rate Your Ride</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>NeighbourLink — Ride Confirmed</title>
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
   <header class="topbar">
-    <a href="dashboard.html" class="topbar-brand">
+    <a href="../dashboard.html" class="topbar-brand">
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
       NeighbourLink
     </a>
   </header>
 
   <div class="page">
-    <div class="card" style="text-align:center;padding:1.5rem;">
-      <h1 style="font-size:1.2rem;margin-bottom:.2rem;">How was your ride?</h1>
-      <p class="text-sm text-secondary mb-2">Rate your experience with <strong>Maria Santos</strong></p>
+    <div class="card" style="text-align:center;padding:2rem 1.25rem;">
+      <div style="width:56px;height:56px;border-radius:50%;background:var(--color-success-light);color:var(--color-success);display:inline-flex;align-items:center;justify-content:center;font-size:1.6rem;margin-bottom:.75rem;">
+        &#10003;
+      </div>
+      <h1 style="font-size:1.3rem;margin-bottom:.35rem;">Ride confirmed!</h1>
+      <p class="text-sm text-secondary" style="margin-bottom:1.25rem;">
+        You accepted <strong>James Lee's</strong> invitation for <strong>Ashfield → Bicentennial Park</strong>.<br>
+        A confirmation has been sent to both of you.
+      </p>
 
-      <!-- Ride summary -->
-      <div class="card" style="background:var(--color-bg);text-align:left;margin-bottom:1.25rem;border:none;">
-        <div class="ride-route" style="margin-bottom:.35rem;">
-          <span class="dot"></span>
-          <strong>Burwood</strong>
-          <span class="line"></span>
-          <span class="dot dot-end"></span>
-          <strong>CBD</strong>
+      <div class="card" style="text-align:left;background:var(--color-bg);border:none;">
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="info-label">Route</div>
+            <div class="info-value">Ashfield → Bicentennial Park</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Schedule</div>
+            <div class="info-value">Sun 4 May, 1:45 PM</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Driver</div>
+            <div class="info-value">James Lee</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Rider</div>
+            <div class="info-value">Emma Wilson</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Proposed price</div>
+            <div class="info-value" style="color:var(--color-primary);font-weight:600;">$5.00</div>
+          </div>
         </div>
-        <div class="text-sm text-secondary">22 April 2026, 7:30 AM</div>
       </div>
 
-      <!-- Passenger to rate -->
-      <div class="avatar avatar-lg" style="margin:0 auto .5rem;">MS</div>
-      <div style="font-weight:600;">Maria Santos</div>
-      <div class="text-sm text-secondary mb-2">Passenger</div>
-
-      <!-- Star selector -->
-      <p class="text-sm fw-500 mb-05">Your rating</p>
-      <div class="star-select" style="margin-bottom:.25rem;">
-        <input type="radio" id="s5" name="rating" value="5"><label for="s5">&#9733;</label>
-        <input type="radio" id="s4" name="rating" value="4"><label for="s4">&#9733;</label>
-        <input type="radio" id="s3" name="rating" value="3"><label for="s3">&#9733;</label>
-        <input type="radio" id="s2" name="rating" value="2"><label for="s2">&#9733;</label>
-        <input type="radio" id="s1" name="rating" value="1"><label for="s1">&#9733;</label>
+      <div class="btn-group-stack mt-2">
+        <a href="detail/confirmed.html" class="btn btn-outline btn-block">View ride details</a>
+        <a href="../dashboard.html" class="btn btn-primary btn-block">Back to home</a>
       </div>
-      <p class="text-sm text-secondary mb-2">Select a rating</p>
-
-      <a href="dashboard.html" class="btn btn-primary btn-block">Submit rating</a>
     </div>
   </div>
 
   <!-- Bottom Navigation -->
   <nav class="bottom-nav">
-    <a href="dashboard.html">
+    <a href="../dashboard.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
       Home
     </a>
-    <a href="driving.html">
+    <a href="../driving/index.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-car-icon lucide-car"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
       Driving
     </a>
-    <a href="riding.html">
+    <a href="index.html" class="active">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-round-icon lucide-users-round"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg>
       Riding
     </a>
-    <a href="profile.html">
+    <a href="../profile/index.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-user-round-icon lucide-circle-user-round"><path d="M17.925 20.056a6 6 0 0 0-11.851.001"/><circle cx="12" cy="11" r="4"/><circle cx="12" cy="12" r="10"/></svg>
       Profile
     </a>

@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>NeighbourLink — Profile · Reviews</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>NeighbourLink — Profile</title>
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
   <header class="topbar">
-    <a href="dashboard.html" class="topbar-brand">
+    <a href="../dashboard.html" class="topbar-brand">
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
       NeighbourLink
     </a>
@@ -71,119 +71,81 @@
 
     <!-- Tabs: History / Reviews -->
     <div class="tabs mt-2">
-      <a class="tab" href="profile.html">Ride History</a>
-      <a class="tab active" href="profile-reviews.html">Ratings (12)</a>
+      <a class="tab active" href="index.html">Ride History</a>
+      <a class="tab" href="reviews.html">Ratings (12)</a>
     </div>
 
-    <!-- Reviews -->
-    <!-- Ratings -->
-    <div class="flex-col" style="gap: .75rem;">
-      <!-- Rating 1 -->
-      <div class="card" style="padding: 1rem;">
-        <div class="flex-between" style="align-items: flex-start; margin-bottom: .75rem;">
-          <div class="flex" style="gap: .65rem; align-items: center;">
-            <span class="avatar" style="width: 36px; height: 36px; font-size: .8rem;">SC</span>
-            <div>
-              <strong style="font-size: .9rem; display: block; line-height: 1.2;">Sarah Chen</strong>
-              <span class="text-secondary" style="font-size: .75rem; display: block; margin-top: 2px;">2 days ago</span>
-            </div>
+    <!-- Ride history -->
+    <div class="card">
+      <div class="flex-col" style="gap:0;">
+        <a href="../driving/past.html" style="padding:.6rem 0;border-bottom:1px solid var(--color-border);text-decoration:none;color:inherit;display:block;">
+          <div class="flex-between text-sm">
+            <span>24 Apr · Burwood → CBD</span>
+            <span class="badge badge-offer" style="font-size:.68rem;">Driving</span>
           </div>
-          <span class="badge badge-offer" style="font-size: .68rem;">Driving</span>
-        </div>
-        <div class="text-center" style="margin: 1.25rem 0 .5rem;">
-          <span class="stars" style="font-size: 1.8rem; letter-spacing: 2px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        </div>
-      </div>
-
-      <!-- Rating 2 -->
-      <div class="card" style="padding: 1rem;">
-        <div class="flex-between" style="align-items: flex-start; margin-bottom: .75rem;">
-          <div class="flex" style="gap: .65rem; align-items: center;">
-            <span class="avatar" style="width: 36px; height: 36px; font-size: .8rem;">DP</span>
-            <div>
-              <strong style="font-size: .9rem; display: block; line-height: 1.2;">Daniel Park</strong>
-              <span class="text-secondary" style="font-size: .75rem; display: block; margin-top: 2px;">1 week ago</span>
-            </div>
+          <div class="flex-between mt-05">
+            <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
           </div>
-          <span class="badge badge-request" style="font-size: .68rem;">Riding</span>
-        </div>
-        <div class="text-center" style="margin: 1.25rem 0 .5rem;">
-          <span class="stars" style="font-size: 1.8rem; letter-spacing: 2px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        </div>
-      </div>
-
-      <!-- Rating 3 -->
-      <div class="card" style="padding: 1rem;">
-        <div class="flex-between" style="align-items: flex-start; margin-bottom: .75rem;">
-          <div class="flex" style="gap: .65rem; align-items: center;">
-            <span class="avatar" style="width: 36px; height: 36px; font-size: .8rem;">JL</span>
-            <div>
-              <strong style="font-size: .9rem; display: block; line-height: 1.2;">James Lee</strong>
-              <span class="text-secondary" style="font-size: .75rem; display: block; margin-top: 2px;">2 weeks ago</span>
-            </div>
+        </a>
+        <a href="../driving/past.html" style="padding:.6rem 0;border-bottom:1px solid var(--color-border);text-decoration:none;color:inherit;display:block;">
+          <div class="flex-between text-sm">
+            <span>22 Apr · CBD → Burwood</span>
+            <span class="badge badge-offer" style="font-size:.68rem;">Driving</span>
           </div>
-          <span class="badge badge-offer" style="font-size: .68rem;">Driving</span>
-        </div>
-        <div class="text-center" style="margin: 1.25rem 0 .5rem;">
-          <span class="stars" style="font-size: 1.8rem; letter-spacing: 2px;">&#9733;&#9733;&#9733;&#9733;<span class="empty">&#9733;</span></span>
-        </div>
-      </div>
-
-      <!-- Rating 4 -->
-      <div class="card" style="padding: 1rem;">
-        <div class="flex-between" style="align-items: flex-start; margin-bottom: .75rem;">
-          <div class="flex" style="gap: .65rem; align-items: center;">
-            <span class="avatar" style="width: 36px; height: 36px; font-size: .8rem;">LT</span>
-            <div>
-              <strong style="font-size: .9rem; display: block; line-height: 1.2;">Lisa Tran</strong>
-              <span class="text-secondary" style="font-size: .75rem; display: block; margin-top: 2px;">3 weeks ago</span>
-            </div>
+          <div class="flex-between mt-05">
+            <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
           </div>
-          <span class="badge badge-request" style="font-size: .68rem;">Riding</span>
-        </div>
-        <div class="text-center" style="margin: 1.25rem 0 .5rem;">
-          <span class="stars" style="font-size: 1.8rem; letter-spacing: 2px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        </div>
-      </div>
-
-      <!-- Rating 5 -->
-      <div class="card" style="padding: 1rem;">
-        <div class="flex-between" style="align-items: flex-start; margin-bottom: .75rem;">
-          <div class="flex" style="gap: .65rem; align-items: center;">
-            <span class="avatar" style="width: 36px; height: 36px; font-size: .8rem;">MS</span>
-            <div>
-              <strong style="font-size: .9rem; display: block; line-height: 1.2;">Maria Santos</strong>
-              <span class="text-secondary" style="font-size: .75rem; display: block; margin-top: 2px;">1 month ago</span>
-            </div>
+        </a>
+        <a href="../driving/past.html" style="padding:.6rem 0;border-bottom:1px solid var(--color-border);text-decoration:none;color:inherit;display:block;">
+          <div class="flex-between text-sm">
+            <span>20 Apr · Burwood → CBD</span>
+            <span class="badge badge-offer" style="font-size:.68rem;">Driving</span>
           </div>
-          <span class="badge badge-offer" style="font-size: .68rem;">Driving</span>
-        </div>
-        <div class="text-center" style="margin: 1.25rem 0 .5rem;">
-          <span class="stars" style="font-size: 1.8rem; letter-spacing: 2px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        </div>
+          <div class="flex-between mt-05">
+            <span class="badge badge-request" style="font-size:.68rem;">Not rated yet</span>
+          </div>
+        </a>
+        <a href="../riding/past.html" style="padding:.6rem 0;border-bottom:1px solid var(--color-border);text-decoration:none;color:inherit;display:block;">
+          <div class="flex-between text-sm">
+            <span>18 Apr · Strathfield → Parramatta</span>
+            <span class="badge badge-request" style="font-size:.68rem;">Riding</span>
+          </div>
+          <div class="flex-between mt-05">
+            <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+        </a>
+        <a href="../riding/past.html" style="padding:.6rem 0;text-decoration:none;color:inherit;display:block;">
+          <div class="flex-between text-sm">
+            <span>12 Apr · Homebush → Olympic Park</span>
+            <span class="badge badge-request" style="font-size:.68rem;">Riding</span>
+          </div>
+          <div class="flex-between mt-05">
+            <span class="stars" style="font-size:.75rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          </div>
+        </a>
       </div>
     </div>
 
     <!-- Edit profile button -->
     <button class="btn btn-outline btn-block mt-2">Edit profile</button>
-    <a href="index.html" class="btn btn-danger-outline btn-block mt-1">Sign out</a>
+    <a href="../index.html" class="btn btn-danger-outline btn-block mt-1">Sign out</a>
   </div>
 
   <!-- Bottom Navigation -->
   <nav class="bottom-nav">
-    <a href="dashboard.html">
+    <a href="../dashboard.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
       Home
     </a>
-    <a href="driving.html">
+    <a href="../driving/index.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-car-icon lucide-car"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
       Driving
     </a>
-    <a href="riding.html">
+    <a href="../riding/index.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-round-icon lucide-users-round"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg>
       Riding
     </a>
-    <a href="profile.html" class="active">
+    <a href="index.html" class="active">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-user-round-icon lucide-circle-user-round"><path d="M17.925 20.056a6 6 0 0 0-11.851.001"/><circle cx="12" cy="11" r="4"/><circle cx="12" cy="12" r="10"/></svg>
       Profile
     </a>

@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>NeighbourLink — Ride Offer Detail</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>NeighbourLink — Past Ride</title>
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
   <header class="topbar">
-    <a href="dashboard.html" class="topbar-brand">
+    <a href="../dashboard.html" class="topbar-brand">
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
       NeighbourLink
     </a>
@@ -16,98 +16,88 @@
 
   <div class="page">
     <div class="card">
-      <span class="card-header fw-500">Ride Offer Information</span>
+      <span class="card-header fw-500">Ride Information</span>
       <div class="route-visual">
         <div class="route-point">
           <div class="label">Pick-up</div>
-          <div class="location">Ashfield</div>
+          <div class="location">Homebush</div>
         </div>
         <div class="route-line-long"></div>
         <div class="route-point">
           <div class="label">Drop-off</div>
-          <div class="location">Sydney Olympic Park</div>
+          <div class="location">Olympic Park</div>
         </div>
       </div>
 
       <div class="info-grid">
         <div class="info-item">
-          <div class="info-label">Date &amp; time</div>
-          <div class="info-value">Sun 4 May, 1:30 PM</div>
+          <div class="info-label">Date</div>
+          <div class="info-value">12 Apr 2026</div>
         </div>
         <div class="info-item">
-          <div class="info-label">Seats available</div>
-          <div class="info-value">2</div>
+          <div class="info-label">Time</div>
+          <div class="info-value">10:00 AM</div>
         </div>
         <div class="info-item">
-          <div class="info-label">Price</div>
-          <div class="info-value">Proposed by you</div>
+          <div class="info-label">Your role</div>
+          <div class="info-value">Rider</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Your proposed price</div>
+          <div class="info-value">$4</div>
         </div>
       </div>
-      <p class="text-sm text-secondary mt-1">Heading to Olympic Park for the day. Can pick up along Parramatta Road.</p>
     </div>
 
-    <!-- Driver info -->
+    <!-- Show the driver (opposite user) -->
     <div class="section-title">
       <span>Driver</span>
     </div>
 
     <div class="card">
       <div class="ride-user" style="gap:.75rem;">
-        <a href="profile-other.html" class="avatar">SC</a>
+        <a href="../profile/other.html" class="avatar">LT</a>
         <div style="flex:1;">
-          <a href="profile-other.html" class="fw-500" style="font-size:.9rem;">Sarah Chen</a>
-          <div class="text-sm">
-            <span class="stars" style="font-size:.78rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            <span class="rating-value">4.6</span>
-            <span class="text-secondary">(10 rides)</span>
-          </div>
-          <div class="text-sm text-secondary mt-05">Member since Jan 2026 · Ashfield</div>
+          <a href="../profile/other.html" class="fw-500" style="font-size:.88rem;">Lisa Tran</a>
+          <div class="text-sm text-secondary">&#9733; 4.9 · 7 rides</div>
         </div>
       </div>
     </div>
 
-    <!-- Send a Ride Application -->
+    <!-- Rate the driver -->
     <div class="section-title">
-      <span>Send a Ride Application</span>
+      <span>Rate this driver</span>
     </div>
 
-    <div class="card">
-      <p class="text-sm text-secondary mb-1">Apply to join this ride by sending a Ride Application. The driver will review your request details.</p>
-      <div class="form-group">
-        <label for="attach-request">Attach active Ride Request</label>
-        <select id="attach-request" class="form-control">
-          <option value="req-1">Ashfield → Bicentennial Park (Sun 4 May, 2:00 PM) · 1 passenger · Proposed $5.00</option>
-          <option value="req-new">+ Create a new Ride Request...</option>
-        </select>
-        <p class="form-hint">Your proposed price, route, and passenger count are linked to this request. Drivers see your whole request.</p>
+    <div class="card" style="text-align:center;">
+      <p class="text-sm text-secondary mb-1">How was your ride with Lisa?</p>
+      <div class="star-select" style="margin-bottom:.5rem;">
+        <input type="radio" id="r5" name="rating" value="5"><label for="r5">&#9733;</label>
+        <input type="radio" id="r4" name="rating" value="4"><label for="r4">&#9733;</label>
+        <input type="radio" id="r3" name="rating" value="3"><label for="r3">&#9733;</label>
+        <input type="radio" id="r2" name="rating" value="2"><label for="r2">&#9733;</label>
+        <input type="radio" id="r1" name="rating" value="1"><label for="r1">&#9733;</label>
       </div>
-
-      <div class="form-group">
-        <label for="message">Message (optional)</label>
-        <textarea id="message" class="form-control" placeholder="e.g. Hi Sarah, I'm heading to Bicentennial Park nearby — this fits perfectly!"></textarea>
-      </div>
-      <div class="btn-group">
-        <button class="btn btn-primary" style="flex:1;">Send Ride Application</button>
-        <a href="riding-detail.html" class="btn btn-outline">Cancel</a>
-      </div>
+      <a href="index.html" class="btn btn-primary btn-block">Submit rating</a>
+      <p class="text-sm text-secondary mt-1"><a href="index.html">Skip for now</a></p>
     </div>
   </div>
 
   <!-- Bottom Navigation -->
   <nav class="bottom-nav">
-    <a href="dashboard.html">
+    <a href="../dashboard.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
       Home
     </a>
-    <a href="driving.html">
+    <a href="../driving/index.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-car-icon lucide-car"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
       Driving
     </a>
-    <a href="riding.html" class="active">
+    <a href="index.html" class="active">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-round-icon lucide-users-round"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg>
       Riding
     </a>
-    <a href="profile.html">
+    <a href="../profile/index.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-user-round-icon lucide-circle-user-round"><path d="M17.925 20.056a6 6 0 0 0-11.851.001"/><circle cx="12" cy="11" r="4"/><circle cx="12" cy="12" r="10"/></svg>
       Profile
     </a>
