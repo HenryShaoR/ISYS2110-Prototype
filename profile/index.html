@@ -16,7 +16,7 @@
 
   <div class="page">
     <!-- Profile card -->
-    <div class="card" style="text-align:center;">
+    <section class="card" style="text-align:center;">
       <div class="avatar avatar-lg" style="margin:0 auto .5rem;">EW</div>
       <h2 style="font-size:1.2rem;">Emma Wilson</h2>
       <p class="text-sm text-secondary">Member since Jan 2026 · Burwood, NSW</p>
@@ -38,10 +38,10 @@
           <div style="font-size: .72rem; color: var(--color-text-secondary); margin-top: .15rem; text-transform: uppercase; letter-spacing: .02em; font-weight: 500;">As rider</div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Trust & verification -->
-    <div class="card">
+    <section class="card">
       <div class="card-header">
         <h3>Trust &amp; verification</h3>
       </div>
@@ -63,101 +63,110 @@
           <span>95%</span>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Tabs: History / Reviews -->
-    <div class="tabs mt-2">
-      <a class="tab active" href="index.html">Ride History</a>
-      <a class="tab" href="reviews.html">Ratings Received (12)</a>
-    </div>
-
-    <!-- Ride history -->
-    <div class="card">
-      <div class="flex-col" style="gap: 0.15rem">
-        <a href="../driving/detail/past.html" class="profile-history-item">
-          <div class="ride-route text-88" style="padding-right:90px;">
-            <span class="dot"></span>
-            <strong>Burwood</strong>
-            <span class="line"></span>
-            <span class="dot dot-end"></span>
-            <strong>CBD</strong>
-          </div>
-          <div class="ride-meta mt-3 flex-between" style="align-items: center; width: 100%;">
-            <span>Fri 24 Apr, 7:30 AM</span>
-            <span class="stars text-75">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-          </div>
-          <span class="badge badge-offer text-68 profile-history-badge">Driving</span>
-        </a>
-
-        <hr class="divider" style="margin: 0.15rem 0;">
-
-        <a href="../driving/detail/past.html" class="profile-history-item">
-          <div class="ride-route text-88" style="padding-right:90px;">
-            <span class="dot"></span>
-            <strong>CBD</strong>
-            <span class="line"></span>
-            <span class="dot dot-end"></span>
-            <strong>Burwood</strong>
-          </div>
-          <div class="ride-meta mt-3 flex-between" style="align-items: center; width: 100%;">
-            <span>Wed 22 Apr, 7:30 AM</span>
-            <span class="stars text-75">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-          </div>
-          <span class="badge badge-offer text-68 profile-history-badge">Driving</span>
-        </a>
-
-        <hr class="divider" style="margin: 0.15rem 0;">
-
-        <a href="../driving/detail/past.html" class="profile-history-item">
-          <div class="ride-route text-88" style="padding-right:90px;">
-            <span class="dot"></span>
-            <strong>Burwood</strong>
-            <span class="line"></span>
-            <span class="dot dot-end"></span>
-            <strong>CBD</strong>
-          </div>
-          <div class="ride-meta mt-3 flex-between" style="align-items: center; width: 100%;">
-            <span>Mon 20 Apr, 5:30 PM</span>
-            <span class="badge badge-request text-68" style="font-weight: 600; padding: 0.3rem 0.65rem; margin: 0;">Rate your journey &rarr;</span>
-          </div>
-          <span class="badge badge-offer text-68 profile-history-badge">Driving</span>
-        </a>
-
-        <hr class="divider" style="margin: 0.15rem 0;">
-
-        <a href="../riding/detail/past.html" class="profile-history-item">
-          <div class="ride-route text-88" style="padding-right:90px;">
-            <span class="dot"></span>
-            <strong>Strathfield</strong>
-            <span class="line"></span>
-            <span class="dot dot-end"></span>
-            <strong>Parramatta</strong>
-          </div>
-          <div class="ride-meta mt-3 flex-between" style="align-items: center; width: 100%;">
-            <span>Sat 18 Apr, 8:00 AM</span>
-            <span class="stars text-75">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-          </div>
-          <span class="badge badge-confirmed text-68 profile-history-badge">Riding</span>
-        </a>
-
-        <hr class="divider" style="margin: 0.15rem 0;">
-
-        <a href="../riding/detail/past.html" class="profile-history-item">
-          <div class="ride-route text-88" style="padding-right:90px;">
-            <span class="dot"></span>
-            <strong>Homebush</strong>
-            <span class="line"></span>
-            <span class="dot dot-end"></span>
-            <strong>Olympic Park</strong>
-          </div>
-          <div class="ride-meta mt-3 flex-between" style="align-items: center; width: 100%;">
-            <span>Sun 12 Apr, 10:00 AM</span>
-            <span class="stars text-75">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-          </div>
-          <span class="badge badge-confirmed text-68 profile-history-badge">Riding</span>
-        </a>
+    <!-- Tabs & History section -->
+    <section>
+      <!-- Tabs: History / Reviews -->
+      <div class="tabs mt-2">
+        <a class="tab active" href="index.html">Ride History</a>
+        <a class="tab" href="reviews.html">Ratings Received (12)</a>
       </div>
-    </div>
+
+      <!-- Ride history -->
+      <div class="card">
+        <ul class="flex-col" style="gap: 0.15rem;">
+          <li>
+            <a href="../driving/detail/past.html" class="profile-history-item">
+              <div class="ride-route text-88" style="padding-right:90px;">
+                <span class="dot"></span>
+                <strong>Burwood</strong>
+                <span class="line"></span>
+                <span class="dot dot-end"></span>
+                <strong>CBD</strong>
+              </div>
+              <div class="ride-meta mt-3 flex-between" style="align-items: center; width: 100%;">
+                <span>Fri 24 Apr, 7:30 AM</span>
+                <span class="stars text-75">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+              <span class="badge badge-offer text-68 profile-history-badge">Driving</span>
+            </a>
+            <hr class="divider" style="margin: 0.15rem 0;">
+          </li>
+
+          <li>
+            <a href="../driving/detail/past.html" class="profile-history-item">
+              <div class="ride-route text-88" style="padding-right:90px;">
+                <span class="dot"></span>
+                <strong>CBD</strong>
+                <span class="line"></span>
+                <span class="dot dot-end"></span>
+                <strong>Burwood</strong>
+              </div>
+              <div class="ride-meta mt-3 flex-between" style="align-items: center; width: 100%;">
+                <span>Wed 22 Apr, 7:30 AM</span>
+                <span class="stars text-75">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+              <span class="badge badge-offer text-68 profile-history-badge">Driving</span>
+            </a>
+            <hr class="divider" style="margin: 0.15rem 0;">
+          </li>
+
+          <li>
+            <a href="../driving/detail/past.html" class="profile-history-item">
+              <div class="ride-route text-88" style="padding-right:90px;">
+                <span class="dot"></span>
+                <strong>Burwood</strong>
+                <span class="line"></span>
+                <span class="dot dot-end"></span>
+                <strong>CBD</strong>
+              </div>
+              <div class="ride-meta mt-3 flex-between" style="align-items: center; width: 100%;">
+                <span>Mon 20 Apr, 5:30 PM</span>
+                <span class="badge badge-request text-68" style="font-weight: 600; padding: 0.3rem 0.65rem; margin: 0;">Rate your journey &rarr;</span>
+              </div>
+              <span class="badge badge-offer text-68 profile-history-badge">Driving</span>
+            </a>
+            <hr class="divider" style="margin: 0.15rem 0;">
+          </li>
+
+          <li>
+            <a href="../riding/detail/past.html" class="profile-history-item">
+              <div class="ride-route text-88" style="padding-right:90px;">
+                <span class="dot"></span>
+                <strong>Strathfield</strong>
+                <span class="line"></span>
+                <span class="dot dot-end"></span>
+                <strong>Parramatta</strong>
+              </div>
+              <div class="ride-meta mt-3 flex-between" style="align-items: center; width: 100%;">
+                <span>Sat 18 Apr, 8:00 AM</span>
+                <span class="stars text-75">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+              <span class="badge badge-confirmed text-68 profile-history-badge">Riding</span>
+            </a>
+            <hr class="divider" style="margin: 0.15rem 0;">
+          </li>
+
+          <li>
+            <a href="../riding/detail/past.html" class="profile-history-item">
+              <div class="ride-route text-88" style="padding-right:90px;">
+                <span class="dot"></span>
+                <strong>Homebush</strong>
+                <span class="line"></span>
+                <span class="dot dot-end"></span>
+                <strong>Olympic Park</strong>
+              </div>
+              <div class="ride-meta mt-3 flex-between" style="align-items: center; width: 100%;">
+                <span>Sun 12 Apr, 10:00 AM</span>
+                <span class="stars text-75">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+              <span class="badge badge-confirmed text-68 profile-history-badge">Riding</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <!-- Edit profile button -->
     <button class="btn btn-outline btn-block mt-2">Edit profile</button>

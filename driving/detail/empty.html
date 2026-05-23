@@ -52,69 +52,75 @@
     </div>
 
     <!-- Pending Ride Applications (Empty State) -->
-    <div class="section-title">
-      <span>Pending Ride Applications</span>
-      <span class="badge badge-pending" style="background:var(--color-border);color:var(--color-text);">0 applications</span>
-    </div>
+    <section>
+      <div class="section-title">
+        <span>Pending Ride Applications</span>
+        <span class="badge badge-pending" style="background:var(--color-border);color:var(--color-text);">0 applications</span>
+      </div>
 
-    <div class="card card-empty">
-      <div class="email-icon">✉</div>
-      <h2 class="card-empty-text">No applications yet</h2>
-    </div>
+      <div class="card card-empty">
+        <div class="email-icon">✉</div>
+        <h2 class="card-empty-text">No applications yet</h2>
+      </div>
+    </section>
 
     <!-- Matching Ride Requests from the community -->
-    <div class="section-title">
-      <span>Matching Ride Requests</span>
-    </div>
-    <p class="text-sm text-secondary mb-1">Community members looking for rides matching your route and time.</p>
-
-    <!-- Match 1 -->
-    <div class="match-item">
-      <div class="match-score high">92%</div>
-      <div class="match-item-body">
-        <div class="flex-between">
-          <a href="../../profile/other.html" class="fw-500 text-88">Lisa Tran</a>
-          <span class="stars text-75">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        </div>
-        <div class="ride-route mt-05 text-82">
-          <span class="dot"></span>
-          Burwood
-          <span class="line"></span>
-          <span class="dot dot-end"></span>
-          Olympic Park
-        </div>
-        <div class="ride-meta mt-05">
-          <span>Sat 3 May, 9:15 AM</span>
-          <span>1 passenger</span>
-          <span class="info-price">Proposed: $5.00</span>
-        </div>
-        <a href="../invite.html" class="btn btn-outline btn-sm mt-05">View &amp; invite</a>
+    <section>
+      <div class="section-title">
+        <span>Matching Ride Requests</span>
       </div>
-    </div>
+      <p class="text-sm text-secondary mb-1">Community members looking for rides matching your route and time.</p>
 
-    <!-- Match 2 -->
-    <div class="match-item">
-      <div class="match-score medium">78%</div>
-      <div class="match-item-body">
-        <div class="flex-between">
-          <a href="../../profile/other.html" class="fw-500 text-88">Amy Nguyen</a>
-          <span class="stars text-75">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        </div>
-        <div class="ride-route mt-05 text-82">
-          <span class="dot"></span>
-          Strathfield
-          <span class="line"></span>
-          <span class="dot dot-end"></span>
-          Olympic Park
-        </div>
-        <div class="ride-meta mt-05">
-          <span>Sat 3 May, 8:45 AM</span>
-          <span>2 passengers</span>
-          <span class="info-price">Proposed: $8.00</span>
-        </div>
-        <a href="../invite.html" class="btn btn-outline btn-sm mt-05">View &amp; invite</a>
-      </div>
-    </div>
+      <ul style="list-style: none;">
+        <!-- Match 1 -->
+        <li class="match-item">
+          <div class="match-score high">92%</div>
+          <article class="match-item-body">
+            <div class="flex-between">
+              <a href="../../profile/other.html" class="fw-500 text-88">Lisa Tran</a>
+              <span class="stars text-75">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </div>
+            <div class="ride-route mt-05 text-82">
+              <span class="dot"></span>
+              Burwood
+              <span class="line"></span>
+              <span class="dot dot-end"></span>
+              Olympic Park
+            </div>
+            <div class="ride-meta mt-05">
+              <span>Sat 3 May, 9:15 AM</span>
+              <span>1 passenger</span>
+              <span class="info-price">Proposed: $5.00</span>
+            </div>
+            <a href="../invite.html" class="btn btn-outline btn-sm mt-05">View &amp; invite</a>
+          </article>
+        </li>
+
+        <!-- Match 2 -->
+        <li class="match-item">
+          <div class="match-score medium">78%</div>
+          <article class="match-item-body">
+            <div class="flex-between">
+              <a href="../../profile/other.html" class="fw-500 text-88">Amy Nguyen</a>
+              <span class="stars text-75">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            </div>
+            <div class="ride-route mt-05 text-82">
+              <span class="dot"></span>
+              Strathfield
+              <span class="line"></span>
+              <span class="dot dot-end"></span>
+              Olympic Park
+            </div>
+            <div class="ride-meta mt-05">
+              <span>Sat 3 May, 8:45 AM</span>
+              <span>2 passengers</span>
+              <span class="info-price">Proposed: $8.00</span>
+            </div>
+            <a href="../invite.html" class="btn btn-outline btn-sm mt-05">View &amp; invite</a>
+          </article>
+        </li>
+      </ul>
+    </section>
   </div>
 
   <!-- Bottom Navigation -->

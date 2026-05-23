@@ -38,153 +38,161 @@
     </div>
 
     <!-- Reports -->
-    <div class="section-title">
-      <span>Reports</span>
-      <span class="badge badge-request">2 pending</span>
-    </div>
-
-    <div class="card">
-      <div class="notification-item">
-        <div class="notification-icon warning">!</div>
-        <div class="notification-body">
-          <p class="text-86"><strong>Sarah Chen</strong> reported <strong>Ryan Kim</strong> for inappropriate behaviour</p>
-          <div class="time">1 day ago</div>
-          <div class="btn-group mt-1">
-            <button class="btn btn-danger btn-sm">Ban user</button>
-            <button class="btn btn-outline btn-sm">Dismiss</button>
-          </div>
-        </div>
+    <section>
+      <div class="section-title">
+        <span>Reports</span>
+        <span class="badge badge-request">2 pending</span>
       </div>
 
-      <div class="notification-item">
-        <div class="notification-icon warning">!</div>
-        <div class="notification-body">
-          <p class="text-86"><strong>Lisa Tran</strong> reported a ride post with misleading info</p>
-          <div class="time">3 days ago</div>
-          <div class="btn-group mt-1">
-            <button class="btn btn-outline btn-sm">Review</button>
-            <button class="btn btn-outline btn-sm">Dismiss</button>
-          </div>
-        </div>
+      <div class="card">
+        <ul style="list-style: none;">
+          <li class="notification-item">
+            <div class="notification-icon warning">!</div>
+            <article class="notification-body">
+              <p class="text-86"><strong>Sarah Chen</strong> reported <strong>Ryan Kim</strong> for inappropriate behaviour</p>
+              <div class="time">1 day ago</div>
+              <div class="btn-group mt-1">
+                <button class="btn btn-danger btn-sm">Ban user</button>
+                <button class="btn btn-outline btn-sm">Dismiss</button>
+              </div>
+            </article>
+          </li>
+
+          <li class="notification-item">
+            <div class="notification-icon warning">!</div>
+            <article class="notification-body">
+              <p class="text-86"><strong>Lisa Tran</strong> reported a ride post with misleading info</p>
+              <div class="time">3 days ago</div>
+              <div class="btn-group mt-1">
+                <button class="btn btn-outline btn-sm">Review</button>
+                <button class="btn btn-outline btn-sm">Dismiss</button>
+              </div>
+            </article>
+          </li>
+        </ul>
       </div>
-    </div>
+    </section>
 
     <!-- User management -->
-    <div class="section-title">
-      <span>Users</span>
-    </div>
-
-    <div class="search-bar">
-      <input type="text" class="form-control" placeholder="Search users...">
-      <button class="btn btn-outline btn-sm">Search</button>
-    </div>
-
-    <div class="card">
-      <div style="display:flex;flex-direction:column;gap:0;">
-        <div style="padding:.65rem 0;border-bottom:1px solid var(--color-border);">
-          <div class="ride-user" style="gap:.6rem;">
-            <span class="avatar avatar-sm">EW</span>
-            <div style="flex:1;min-width:0;">
-              <div class="flex-between">
-                <span class="fw-500 text-86">Emma Wilson</span>
-                <span class="badge badge-confirmed text-65">Active</span>
-              </div>
-              <div class="text-sm text-secondary">&#9733; 4.8 · 12 rides</div>
-            </div>
-          </div>
-        </div>
-
-        <div style="padding:.65rem 0;border-bottom:1px solid var(--color-border);">
-          <div class="ride-user" style="gap:.6rem;">
-            <span class="avatar avatar-sm">DP</span>
-            <div style="flex:1;min-width:0;">
-              <div class="flex-between">
-                <span class="fw-500 text-86">Daniel Park</span>
-                <span class="badge badge-confirmed text-65">Active</span>
-              </div>
-              <div class="text-sm text-secondary">&#9733; 4.3 · 8 rides</div>
-            </div>
-          </div>
-        </div>
-
-        <div style="padding:.65rem 0;border-bottom:1px solid var(--color-border);">
-          <div class="ride-user" style="gap:.6rem;">
-            <span class="avatar avatar-sm">JL</span>
-            <div style="flex:1;min-width:0;">
-              <div class="flex-between">
-                <span class="fw-500 text-86">James Lee</span>
-                <span class="badge badge-confirmed text-65">Active</span>
-              </div>
-              <div class="text-sm text-secondary">&#9733; 5.0 · 15 rides</div>
-            </div>
-          </div>
-        </div>
-
-        <div style="padding:.65rem 0;border-bottom:1px solid var(--color-border);">
-          <div class="ride-user" style="gap:.6rem;">
-            <span class="avatar avatar-sm">MS</span>
-            <div style="flex:1;min-width:0;">
-              <div class="flex-between">
-                <span class="fw-500 text-86">Maria Santos</span>
-                <span class="badge badge-confirmed text-65">Active</span>
-              </div>
-              <div class="text-sm text-secondary">&#9733; 4.2 · 6 rides</div>
-            </div>
-          </div>
-        </div>
-
-        <div style="padding:.65rem 0;background:var(--color-danger-light);border-radius:var(--radius-sm);margin-top:.5rem;">
-          <div class="ride-user" style="gap:.6rem;">
-            <span class="avatar avatar-sm" style="background:var(--color-danger-light);color:var(--color-danger);">RK</span>
-            <div style="flex:1;min-width:0;">
-              <div class="flex-between">
-                <span class="fw-500 text-86">Ryan Kim</span>
-                <span class="badge badge-rejected text-65">Banned</span>
-              </div>
-              <div class="text-sm text-secondary">&#9733; 2.1 · 3 rides</div>
-            </div>
-          </div>
-        </div>
+    <section>
+      <div class="section-title">
+        <span>Users</span>
       </div>
-    </div>
+
+      <div class="search-bar">
+        <input type="text" class="form-control" placeholder="Search users...">
+        <button class="btn btn-outline btn-sm">Search</button>
+      </div>
+
+      <div class="card">
+        <ul style="display:flex;flex-direction:column;gap:0;list-style:none;">
+          <li style="padding:.65rem 0;border-bottom:1px solid var(--color-border);">
+            <article class="ride-user" style="gap:.6rem;">
+              <span class="avatar avatar-sm">EW</span>
+              <div style="flex:1;min-width:0;">
+                <div class="flex-between">
+                  <span class="fw-500 text-86">Emma Wilson</span>
+                  <span class="badge badge-confirmed text-65">Active</span>
+                </div>
+                <div class="text-sm text-secondary">&#9733; 4.8 · 12 rides</div>
+              </div>
+            </article>
+          </li>
+
+          <li style="padding:.65rem 0;border-bottom:1px solid var(--color-border);">
+            <article class="ride-user" style="gap:.6rem;">
+              <span class="avatar avatar-sm">DP</span>
+              <div style="flex:1;min-width:0;">
+                <div class="flex-between">
+                  <span class="fw-500 text-86">Daniel Park</span>
+                  <span class="badge badge-confirmed text-65">Active</span>
+                </div>
+                <div class="text-sm text-secondary">&#9733; 4.3 · 8 rides</div>
+              </div>
+            </article>
+          </li>
+
+          <li style="padding:.65rem 0;border-bottom:1px solid var(--color-border);">
+            <article class="ride-user" style="gap:.6rem;">
+              <span class="avatar avatar-sm">JL</span>
+              <div style="flex:1;min-width:0;">
+                <div class="flex-between">
+                  <span class="fw-500 text-86">James Lee</span>
+                  <span class="badge badge-confirmed text-65">Active</span>
+                </div>
+                <div class="text-sm text-secondary">&#9733; 5.0 · 15 rides</div>
+              </div>
+            </article>
+          </li>
+
+          <li style="padding:.65rem 0;border-bottom:1px solid var(--color-border);">
+            <article class="ride-user" style="gap:.6rem;">
+              <span class="avatar avatar-sm">MS</span>
+              <div style="flex:1;min-width:0;">
+                <div class="flex-between">
+                  <span class="fw-500 text-86">Maria Santos</span>
+                  <span class="badge badge-confirmed text-65">Active</span>
+                </div>
+                <div class="text-sm text-secondary">&#9733; 4.2 · 6 rides</div>
+              </div>
+            </article>
+          </li>
+
+          <li style="padding:.65rem 0;background:var(--color-danger-light);border-radius:var(--radius-sm);margin-top:.5rem;">
+            <article class="ride-user" style="gap:.6rem;">
+              <span class="avatar avatar-sm" style="background:var(--color-danger-light);color:var(--color-danger);">RK</span>
+              <div style="flex:1;min-width:0;">
+                <div class="flex-between">
+                  <span class="fw-500 text-86">Ryan Kim</span>
+                  <span class="badge badge-rejected text-65">Banned</span>
+                </div>
+                <div class="text-sm text-secondary">&#9733; 2.1 · 3 rides</div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <!-- Account action -->
-    <div class="section-title">
-      <span>Account Actions</span>
-    </div>
-
-    <div class="card">
-      <div class="form-group">
-        <label for="user-search">User</label>
-        <input type="text" id="user-search" class="form-control" value="Ryan Kim" placeholder="Search by name or email">
+    <section>
+      <div class="section-title">
+        <span>Account Actions</span>
       </div>
 
-      <div class="card" style="background:var(--color-bg);border:none;margin-bottom:.75rem;">
-        <div class="ride-user" style="gap:.6rem;">
-          <span class="avatar avatar-sm" style="background:var(--color-danger-light);color:var(--color-danger);">RK</span>
-          <div style="flex:1;">
-            <strong class="text-86">Ryan Kim</strong>
-            <div class="text-sm text-secondary">3 rides · Rating: 2.1</div>
-          </div>
-          <span class="badge badge-rejected">Banned</span>
+      <div class="card">
+        <div class="form-group">
+          <label for="user-search">User</label>
+          <input type="text" id="user-search" class="form-control" value="Ryan Kim" placeholder="Search by name or email">
         </div>
-      </div>
 
-      <div class="form-group">
-        <label for="action">Action</label>
-        <select id="action" class="form-control">
-          <option>Ban account</option>
-          <option>Suspend (7 days)</option>
-          <option>Issue warning</option>
-          <option selected>Unban account</option>
-        </select>
+        <div class="card" style="background:var(--color-bg);border:none;margin-bottom:.75rem;">
+          <article class="ride-user" style="gap:.6rem;">
+            <span class="avatar avatar-sm" style="background:var(--color-danger-light);color:var(--color-danger);">RK</span>
+            <div style="flex:1;">
+              <strong class="text-86">Ryan Kim</strong>
+              <div class="text-sm text-secondary">3 rides · Rating: 2.1</div>
+            </div>
+            <span class="badge badge-rejected">Banned</span>
+          </article>
+        </div>
+
+        <div class="form-group">
+          <label for="action">Action</label>
+          <select id="action" class="form-control">
+            <option>Ban account</option>
+            <option>Suspend (7 days)</option>
+            <option>Issue warning</option>
+            <option selected>Unban account</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="reason">Reason</label>
+          <textarea id="reason" class="form-control" placeholder="Provide a reason"></textarea>
+        </div>
+        <button class="btn btn-primary btn-block">Apply action</button>
       </div>
-      <div class="form-group">
-        <label for="reason">Reason</label>
-        <textarea id="reason" class="form-control" placeholder="Provide a reason"></textarea>
-      </div>
-      <button class="btn btn-primary btn-block">Apply action</button>
-    </div>
+    </section>
 
     <a href="index.html" class="btn btn-danger-outline btn-block mt-2">Sign out</a>
   </div>

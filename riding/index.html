@@ -21,98 +21,123 @@
     </div>
 
     <!-- Active requests -->
-    <div class="section-title">
-      <span>Active Requests</span>
-    </div>
-
-    <a href="detail/confirmed.html" class="list-item">
-      <div class="list-item-body">
-        <div class="ride-route text-88">
-          <span class="dot"></span>
-          <strong>Strathfield</strong>
-          <span class="line"></span>
-          <span class="dot dot-end"></span>
-          <strong>Parramatta</strong>
-        </div>
-        <div class="ride-meta mt-3">
-          <span>Mon 28 Apr, 8:00 AM</span>
-        </div>
+    <section>
+      <div class="section-title">
+        <span>Active Requests</span>
       </div>
-      <span class="badge badge-confirmed card-status-badge">Confirmed</span>
-    </a>
 
-    <a href="detail/empty.html" class="list-item">
-      <div class="list-item-body">
-        <div class="ride-route text-88">
-          <span class="dot"></span>
-          <strong>Burwood</strong>
-          <span class="line"></span>
-          <span class="dot dot-end"></span>
-          <strong>Parramatta</strong>
-        </div>
-        <div class="ride-meta mt-3">
-          <span>Sat 3 May, 10:00 AM</span>
-          <span>1 passenger</span>
-        </div>
-      </div>
-      <span class="badge badge-pending card-status-badge">Awaiting</span>
-    </a>
+      <ul class="flex-col" style="gap: 0.5rem; list-style: none;">
+        <li>
+          <a href="detail/confirmed.html" class="list-item">
+            <article class="list-item-body">
+              <div class="ride-route text-88">
+                <span class="dot"></span>
+                <strong>Strathfield</strong>
+                <span class="line"></span>
+                <span class="dot dot-end"></span>
+                <strong>Parramatta</strong>
+              </div>
+              <div class="ride-meta mt-3">
+                <span>Mon 28 Apr, 8:00 AM</span>
+                <span>1 passenger</span>
+              </div>
+            </article>
+            <span class="badge badge-confirmed card-status-badge">Confirmed</span>
+          </a>
+        </li>
 
-    <a href="detail/pending.html" class="list-item">
-      <div class="list-item-body">
-        <div class="ride-route text-88">
-          <span class="dot"></span>
-          <strong>Ashfield</strong>
-          <span class="line"></span>
-          <span class="dot dot-end"></span>
-          <strong>Bicentennial Park</strong>
-        </div>
-        <div class="ride-meta mt-3">
-          <span>Sun 4 May, 2:00 PM</span>
-          <span>1 passenger</span>
-        </div>
-      </div>
-      <span class="badge badge-request card-status-badge">1</span>
-    </a>
+        <li>
+          <a href="detail/empty.html" class="list-item">
+            <article class="list-item-body">
+              <div class="ride-route text-88">
+                <span class="dot"></span>
+                <strong>Burwood</strong>
+                <span class="line"></span>
+                <span class="dot dot-end"></span>
+                <strong>Parramatta</strong>
+              </div>
+              <div class="ride-meta mt-3">
+                <span>Sat 3 May, 10:00 AM</span>
+                <span>1 passenger</span>
+              </div>
+            </article>
+            <span class="badge badge-pending card-status-badge">Awaiting</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="detail/pending.html" class="list-item">
+            <article class="list-item-body">
+              <div class="ride-route text-88">
+                <span class="dot"></span>
+                <strong>Ashfield</strong>
+                <span class="line"></span>
+                <span class="dot dot-end"></span>
+                <strong>Bicentennial Park</strong>
+              </div>
+              <div class="ride-meta mt-3">
+                <span>Sun 4 May, 2:00 PM</span>
+                <span>1 passenger</span>
+              </div>
+            </article>
+            <span class="badge badge-request card-status-badge">1</span>
+          </a>
+        </li>
+      </ul>
+    </section>
 
     <!-- Past rides (as rider) -->
-    <div class="section-title">
-      <span>Past Rides</span>
-    </div>
-
-    <a href="detail/past.html" class="list-item" style="opacity:.7;">
-      <div class="list-item-body">
-        <div class="ride-route text-88">
-          <span class="dot"></span>
-          <strong>Homebush</strong>
-          <span class="line"></span>
-          <span class="dot dot-end"></span>
-          <strong>Olympic Park</strong>
-        </div>
-        <div class="ride-meta mt-3 flex-between" style="align-items: center; width: 100%;">
-          <span>Sun 12 Apr, 10:00 AM</span>
-          <span class="stars text-75">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        </div>
+    <section>
+      <div class="section-title">
+        <span>Past Rides</span>
       </div>
-      <span class="badge badge-pending card-status-badge">Past</span>
-    </a>
 
-    <a href="detail/past.html" class="list-item" style="opacity:.7;">
-      <div class="list-item-body">
-        <div class="ride-route text-88">
-          <span class="dot"></span>
-          <strong>Strathfield</strong>
-          <span class="line"></span>
-          <span class="dot dot-end"></span>
-          <strong>Parramatta</strong>
-        </div>
-        <div class="ride-meta mt-3 flex-between" style="align-items: center; width: 100%;">
-          <span>Sat 18 Apr, 8:00 AM</span>
-          <span class="badge badge-request" style="font-weight: 600; padding: 0.3rem 0.65rem;">Rate your journey &rarr;</span>
-        </div>
-      </div>
-      <span class="badge badge-pending card-status-badge">Past</span>
-    </a>
+      <ul class="flex-col" style="gap: 0.5rem; list-style: none;">
+        <li>
+          <a href="detail/past.html" class="list-item" style="opacity:.7;">
+            <article class="list-item-body">
+              <div class="ride-route text-88">
+                <span class="dot"></span>
+                <strong>Homebush</strong>
+                <span class="line"></span>
+                <span class="dot dot-end"></span>
+                <strong>Olympic Park</strong>
+              </div>
+              <div class="ride-meta mt-3 flex-between" style="align-items: center; width: 100%;">
+                <div class="ride-meta">
+                  <span>Sun 12 Apr, 10:00 AM</span>
+                  <span>1 passenger</span>
+                </div>
+                <span class="stars text-75">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+            </article>
+            <span class="badge badge-pending card-status-badge">Past</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="detail/past.html" class="list-item" style="opacity:.7;">
+            <article class="list-item-body">
+              <div class="ride-route text-88">
+                <span class="dot"></span>
+                <strong>Strathfield</strong>
+                <span class="line"></span>
+                <span class="dot dot-end"></span>
+                <strong>Parramatta</strong>
+              </div>
+              <div class="ride-meta mt-3 flex-between" style="align-items: center; width: 100%;">
+                <div class="ride-meta">
+                  <span>Sat 18 Apr, 8:00 AM</span>
+                  <span>1 passenger</span>
+                </div>
+                <span class="badge badge-request" style="font-weight: 600; padding: 0.3rem 0.65rem;">Rate your journey &rarr;</span>
+              </div>
+            </article>
+            <span class="badge badge-pending card-status-badge">Past</span>
+          </a>
+        </li>
+      </ul>
+    </section>
   </div>
 
   <!-- FAB: new request -->

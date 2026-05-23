@@ -56,67 +56,73 @@
     </div>
 
     <!-- Ride Invitations Received (Empty State) -->
-    <div class="section-title">
-      <span>Ride Invitations Received</span>
-      <span class="badge badge-pending" style="background:var(--color-border);color:var(--color-text);">0 invitations</span>
-    </div>
+    <section>
+      <div class="section-title">
+        <span>Ride Invitations Received</span>
+        <span class="badge badge-pending" style="background:var(--color-border);color:var(--color-text);">0 invitations</span>
+      </div>
 
-    <div class="card card-empty">
-      <div class="email-icon">✉</div>
-      <h2 class="card-empty-text">No invitations yet</h2>
-    </div>
+      <div class="card card-empty">
+        <div class="email-icon">✉</div>
+        <h2 class="card-empty-text">No invitations yet</h2>
+      </div>
+    </section>
 
     <!-- Matching Ride Offers from the community -->
-    <div class="section-title">
-      <span>Matching Ride Offers</span>
-    </div>
-    <p class="text-sm text-secondary mb-1">Drive offers from the community that match your request route and time.</p>
-
-    <!-- Match 1: high score -->
-    <div class="match-item">
-      <div class="match-score high">91%</div>
-      <div class="match-item-body">
-        <div class="flex-between">
-          <a href="../../profile/other.html" class="fw-500 text-88">Daniel Park</a>
-          <span class="stars text-75">&#9733;&#9733;&#9733;&#9733;<span class="empty">&#9733;</span></span>
-        </div>
-        <div class="ride-route mt-05 text-82">
-          <span class="dot"></span>
-          Burwood
-          <span class="line"></span>
-          <span class="dot dot-end"></span>
-          Parramatta
-        </div>
-        <div class="ride-meta mt-05">
-          <span>Sat 3 May, 9:45 AM</span>
-          <span>3 seats available</span>
-        </div>
-        <a href="../apply.html" class="btn btn-outline btn-sm mt-05">View &amp; request</a>
+    <section>
+      <div class="section-title">
+        <span>Matching Ride Offers</span>
       </div>
-    </div>
+      <p class="text-sm text-secondary mb-1">Drive offers from the community that match your request route and time.</p>
 
-    <!-- Match 2: medium score -->
-    <div class="match-item">
-      <div class="match-score medium">76%</div>
-      <div class="match-item-body">
-        <div class="flex-between">
-          <a href="../../profile/other.html" class="fw-500 text-88">Maria Santos</a>
-          <span class="stars text-75">&#9733;&#9733;&#9733;&#9733;<span class="empty">&#9733;</span></span>
-        </div>
-        <div class="ride-route mt-05 text-82">
-          <span class="dot"></span>
-          Croydon
-          <span class="line"></span>
-          <span class="dot dot-end"></span>
-          Parramatta
-        </div>
-        <div class="ride-meta mt-05">
-          <span>Sat 3 May, 10:15 AM</span>
-          <span>2 seats available</span>
-        </div>
-        <a href="../apply.html" class="btn btn-outline btn-sm mt-05">View &amp; request</a>
-      </div>
-    </div>
+      <ul style="list-style: none;">
+        <!-- Match 1: high score -->
+        <li class="match-item">
+          <div class="match-score high">91%</div>
+          <article class="match-item-body">
+            <div class="flex-between">
+              <a href="../../profile/other.html" class="fw-500 text-88">Daniel Park</a>
+              <span class="stars text-75">&#9733;&#9733;&#9733;&#9733;<span class="empty">&#9733;</span></span>
+            </div>
+            <div class="ride-route mt-05 text-82">
+              <span class="dot"></span>
+              Burwood
+              <span class="line"></span>
+              <span class="dot dot-end"></span>
+              Parramatta
+            </div>
+            <div class="ride-meta mt-05">
+              <span>Sat 3 May, 9:45 AM</span>
+              <span>3 seats available</span>
+            </div>
+            <a href="../apply.html" class="btn btn-outline btn-sm mt-05">View &amp; request</a>
+          </article>
+        </li>
+
+        <!-- Match 2: medium score -->
+        <li class="match-item">
+          <div class="match-score medium">76%</div>
+          <article class="match-item-body">
+            <div class="flex-between">
+              <a href="../../profile/other.html" class="fw-500 text-88">Maria Santos</a>
+              <span class="stars text-75">&#9733;&#9733;&#9733;&#9733;<span class="empty">&#9733;</span></span>
+            </div>
+            <div class="ride-route mt-05 text-82">
+              <span class="dot"></span>
+              Croydon
+              <span class="line"></span>
+              <span class="dot dot-end"></span>
+              Parramatta
+            </div>
+            <div class="ride-meta mt-05">
+              <span>Sat 3 May, 10:15 AM</span>
+              <span>2 seats available</span>
+            </div>
+            <a href="../apply.html" class="btn btn-outline btn-sm mt-05">View &amp; request</a>
+          </article>
+        </li>
+      </ul>
+    </section>
   </div>
 
   <!-- Bottom Navigation -->
